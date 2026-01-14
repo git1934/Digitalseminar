@@ -28,7 +28,7 @@ export function Challenges() {
     <section className="py-20 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <span className="text-blue-600 font-semibold text-sm uppercase tracking-wider">
+          <span className="text-[#FCCE00] font-semibold text-sm uppercase tracking-wider">
             Section 01
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
@@ -47,8 +47,8 @@ export function Challenges() {
                 key={index}
                 className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
-                <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-                  <Icon className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-[#FCCE00]/20 rounded-xl flex items-center justify-center mb-6">
+                  <Icon className="w-8 h-8 text-[#FCCE00]" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">{challenge.title}</h3>
                 <p className="text-gray-600 text-lg">{challenge.description}</p>

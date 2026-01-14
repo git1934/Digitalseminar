@@ -27,13 +27,13 @@ export function Introduction() {
   ];
 
   return (
-    <section className="min-h-screen flex items-center justify-center py-20 px-4 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
+    <section className="min-h-screen flex items-center justify-center py-20 px-4 bg-gradient-to-br from-black via-gray-900 to-black">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Profile */}
           <div className="text-white">
             <div className="mb-6">
-              <span className="text-blue-400 font-semibold text-sm uppercase tracking-wider">
+              <span className="text-[#FCCE00] font-semibold text-sm uppercase tracking-wider">
                 Speaker Introduction
               </span>
             </div>
@@ -42,7 +42,7 @@ export function Introduction() {
               カトウ ヒロキ
             </h1>
             
-            <div className="text-2xl text-blue-300 mb-8">
+            <div className="text-2xl text-[#FCCE00] mb-8">
               データサイエンティスト
             </div>
 
@@ -55,14 +55,14 @@ export function Introduction() {
             <div className="flex gap-4 mb-12">
               <a
                 href="#"
-                className="w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors border border-white/20"
+                className="w-12 h-12 bg-white/10 hover:bg-[#FCCE00]/20 rounded-full flex items-center justify-center transition-colors border border-white/20"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-6 h-6" />
               </a>
               <a
                 href="#"
-                className="w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors border border-white/20"
+                className="w-12 h-12 bg-white/10 hover:bg-[#FCCE00]/20 rounded-full flex items-center justify-center transition-colors border border-white/20"
                 aria-label="Email"
               >
                 <Mail className="w-6 h-6" />
@@ -75,7 +75,7 @@ export function Introduction() {
                 {expertise.map((skill, index) => (
                   <span
                     key={index}
-                    className="px-4 py-2 bg-blue-500/30 rounded-full text-sm font-medium border border-blue-400/30"
+                    className="px-4 py-2 bg-[#FCCE00]/30 rounded-full text-sm font-medium border border-[#FCCE00]/50"
                   >
                     {skill}
                   </span>
@@ -94,8 +94,8 @@ export function Introduction() {
                   className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-colors"
                 >
                   <div className="flex items-start gap-6">
-                    <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center">
-                      <Icon className="w-8 h-8 text-white" />
+                    <div className="flex-shrink-0 w-16 h-16 bg-[#FCCE00] rounded-xl flex items-center justify-center">
+                      <Icon className="w-8 h-8 text-black" />
                     </div>
                     <div className="text-white">
                       <h3 className="text-2xl font-bold mb-2">
@@ -110,8 +110,8 @@ export function Introduction() {
               );
             })}
 
-            <div className="bg-gradient-to-r from-blue-500 to-blue-700 rounded-2xl p-8 text-white text-center shadow-2xl">
-              <div className="text-sm font-semibold uppercase tracking-wider mb-2 text-blue-100">
+            <div className="bg-gradient-to-r from-[#FCCE00] to-[#e6bc00] rounded-2xl p-8 text-black text-center shadow-2xl">
+              <div className="text-sm font-semibold uppercase tracking-wider mb-2">
                 Mission
               </div>
               <p className="text-xl font-bold leading-relaxed">

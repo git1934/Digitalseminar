@@ -3,10 +3,10 @@ import qrCodeImage from 'figma:asset/4f0f6996a218adff0591cd8aa2102dba022258c5.pn
 
 export function Survey() {
   return (
-    <section className="min-h-screen flex items-center justify-center py-20 px-4 bg-gradient-to-br from-blue-50 via-white to-purple-50">
+    <section className="min-h-screen flex items-center justify-center py-20 px-4 bg-gradient-to-br from-gray-50 via-white to-gray-100">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
-          <span className="text-blue-600 font-semibold text-sm uppercase tracking-wider">
+          <span className="text-[#FCCE00] font-semibold text-sm uppercase tracking-wider">
             Before We Begin
           </span>
           <h2 className="text-4xl md:text-6xl font-bold mt-4 mb-6">
@@ -23,13 +23,13 @@ export function Survey() {
           <div className="space-y-8">
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
               <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                <CheckSquare className="w-7 h-7 text-blue-600" />
+                <CheckSquare className="w-7 h-7 text-[#FCCE00]" />
                 回答方法
               </h3>
               
               <ol className="space-y-6">
                 <li className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                  <div className="flex-shrink-0 w-10 h-10 bg-[#FCCE00] text-black rounded-full flex items-center justify-center font-bold text-lg">
                     1
                   </div>
                   <div>
@@ -41,7 +41,7 @@ export function Survey() {
                 </li>
 
                 <li className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                  <div className="flex-shrink-0 w-10 h-10 bg-[#FCCE00] text-black rounded-full flex items-center justify-center font-bold text-lg">
                     2
                   </div>
                   <div>
@@ -53,7 +53,7 @@ export function Survey() {
                 </li>
 
                 <li className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                  <div className="flex-shrink-0 w-10 h-10 bg-[#FCCE00] text-black rounded-full flex items-center justify-center font-bold text-lg">
                     3
                   </div>
                   <div>
@@ -66,12 +66,12 @@ export function Survey() {
               </ol>
             </div>
 
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-6 text-white">
+            <div className="bg-gradient-to-r from-black to-gray-800 rounded-2xl p-6 text-white">
               <div className="flex items-start gap-4">
-                <Smartphone className="w-8 h-8 flex-shrink-0 mt-1" />
+                <Smartphone className="w-8 h-8 flex-shrink-0 mt-1 text-[#FCCE00]" />
                 <div>
                   <h4 className="font-bold text-lg mb-2">アンケート内容</h4>
-                  <ul className="space-y-1 text-blue-50">
+                  <ul className="space-y-1 text-gray-300">
                     <li>• 現在のデジタル化の取り組み状況</li>
                     <li>• 抱えている課題や悩み</li>
                     <li>• 興味のある施策・テーマ</li>
@@ -83,7 +83,7 @@ export function Survey() {
 
           {/* Right side - QR Code */}
           <div className="flex flex-col items-center">
-            <div className="bg-white rounded-3xl p-8 shadow-2xl border-4 border-blue-100">
+            <div className="bg-white rounded-3xl p-8 shadow-2xl border-4 border-[#FCCE00]">
               <div className="bg-white rounded-2xl p-6">
                 <img
                   src={qrCodeImage}
@@ -93,7 +93,7 @@ export function Survey() {
               </div>
               
               <div className="mt-6 text-center">
-                <div className="flex items-center justify-center gap-2 text-blue-600 mb-2">
+                <div className="flex items-center justify-center gap-2 text-[#FCCE00] mb-2">
                   <QrCode className="w-6 h-6" />
                   <span className="font-bold text-lg">こちらからアクセス</span>
                 </div>
