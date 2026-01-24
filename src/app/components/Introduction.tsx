@@ -27,32 +27,32 @@ export function Introduction() {
   ];
 
   return (
-    <section className="min-h-screen flex items-center justify-center py-20 px-4 bg-gradient-to-br from-black via-gray-900 to-black">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section className="h-screen overflow-hidden flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black px-12 py-16">
+      <div className="max-w-6xl mx-auto w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left side - Profile */}
           <div className="text-white">
-            <div className="mb-6">
-              <span className="text-[#FCCE00] font-semibold text-sm uppercase tracking-wider">
+            <div className="mb-4">
+              <span className="text-[#FCCE00] font-semibold text-base uppercase tracking-wider">
                 Speaker Introduction
               </span>
             </div>
             
-            <h1 className="text-5xl md:text-6xl font-bold mb-4">
+            <h1 className="text-6xl font-bold mb-4">
               カトウ ヒロキ
             </h1>
             
-            <div className="text-2xl text-[#FCCE00] mb-8">
+            <div className="text-3xl text-[#FCCE00] mb-8">
               データサイエンティスト
             </div>
 
-            <p className="text-xl text-gray-300 leading-relaxed mb-8">
+            <p className="text-2xl text-gray-300 leading-relaxed mb-8">
               データドリブンな意思決定とデジタルトランスフォーメーションを通じて、
               中小企業の成長を支援しています。統計学と機械学習の専門知識を活かし、
               ビジネス課題の解決に取り組んでいます。
             </p>
 
-            <div className="flex gap-4 mb-12">
+            <div className="flex gap-4 mb-8">
               <a
                 href="#"
                 className="w-12 h-12 bg-white/10 hover:bg-[#FCCE00]/20 rounded-full flex items-center justify-center transition-colors border border-white/20"
@@ -69,13 +69,13 @@ export function Introduction() {
               </a>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-              <h3 className="text-xl font-bold mb-4">専門領域</h3>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+              <h3 className="text-2xl font-bold mb-4">専門領域</h3>
               <div className="flex flex-wrap gap-3">
                 {expertise.map((skill, index) => (
                   <span
                     key={index}
-                    className="px-4 py-2 bg-[#FCCE00]/30 rounded-full text-sm font-medium border border-[#FCCE00]/50"
+                    className="px-4 py-2 bg-[#FCCE00]/30 rounded-full text-lg font-medium border border-[#FCCE00]/50"
                   >
                     {skill}
                   </span>
@@ -91,7 +91,7 @@ export function Introduction() {
               return (
                 <div
                   key={index}
-                  className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-colors"
+                  className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-colors"
                 >
                   <div className="flex items-start gap-6">
                     <div className="flex-shrink-0 w-16 h-16 bg-[#FCCE00] rounded-xl flex items-center justify-center">
@@ -101,7 +101,7 @@ export function Introduction() {
                       <h3 className="text-2xl font-bold mb-2">
                         {achievement.title}
                       </h3>
-                      <p className="text-gray-300 text-lg">
+                      <p className="text-gray-300 text-xl">
                         {achievement.description}
                       </p>
                     </div>
@@ -110,11 +110,11 @@ export function Introduction() {
               );
             })}
 
-            <div className="bg-gradient-to-r from-[#FCCE00] to-[#e6bc00] rounded-2xl p-8 text-black text-center shadow-2xl">
-              <div className="text-sm font-semibold uppercase tracking-wider mb-2">
+            <div className="bg-gradient-to-r from-[#FCCE00] to-[#e6bc00] rounded-xl p-8 text-black text-center shadow-2xl">
+              <div className="text-sm font-semibold uppercase tracking-wider mb-3">
                 Mission
               </div>
-              <p className="text-xl font-bold leading-relaxed">
+              <p className="text-2xl font-bold leading-relaxed">
                 データの力で、中小企業の<br />
                 未来を切り拓く
               </p>

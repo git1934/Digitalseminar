@@ -29,21 +29,14 @@ export function AvoidMeansMethods() {
   ];
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-white relative px-4 py-20">
+    <section className="h-screen overflow-hidden flex items-center justify-center bg-white relative px-12 py-12">
       {/* Background Elements */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#e1e1e1]/20 rounded-full -translate-y-1/4 translate-x-1/4"></div>
-      <div 
-        className="absolute bottom-0 left-0 w-full h-48 opacity-30"
-        style={{
-          backgroundImage: 'radial-gradient(#e1e1e1 1px, transparent 1px)',
-          backgroundSize: '20px 20px'
-        }}
-      ></div>
 
-      <div className="max-w-7xl mx-auto w-full relative z-10">
+      <div className="max-w-7xl mx-auto w-full h-full relative z-10 flex flex-col">
         {/* Header */}
-        <div className="px-16 pt-10 pb-6 border-b-2 border-gray-100">
-          <div className="inline-block bg-[#FCCE00]/10 text-[#FCCE00] text-sm font-bold uppercase tracking-wider px-3 py-1 rounded mb-3">
+        <div className="pt-4 pb-6 border-b-2 border-gray-100">
+          <div className="inline-block bg-[#FCCE00]/10 text-[#FCCE00] text-base font-bold uppercase tracking-wider px-4 py-2 rounded mb-3">
             METHODOLOGY
           </div>
           <h1 className="text-5xl font-black text-black">
@@ -52,17 +45,17 @@ export function AvoidMeansMethods() {
         </div>
 
         {/* Main Content */}
-        <div className="px-16 py-10 flex gap-12">
+        <div className="flex gap-12 flex-1 items-center">
           {/* Left Column: Process & Checklist */}
           <div className="flex-[1.4] flex flex-col gap-8">
             {/* Process Steps */}
             <div>
-              <div className="flex items-center gap-3 text-xl font-bold text-gray-700 mb-6">
+              <div className="flex items-center gap-4 text-2xl font-bold text-gray-700 mb-5">
                 <Route className="w-6 h-6 text-[#FCCE00]" />
                 <span>正しい検討プロセス</span>
               </div>
 
-              <div className="flex gap-5 mb-4">
+              <div className="flex gap-5">
                 {processSteps.map((step) => (
                   <div
                     key={step.number}
@@ -72,13 +65,13 @@ export function AvoidMeansMethods() {
                         : 'bg-gray-50 border-gray-200 opacity-60'
                     }`}
                   >
-                    <div className="absolute -top-3 left-5 w-8 h-8 bg-[#FCCE00] text-white rounded-full flex items-center justify-center font-bold text-sm shadow">
+                    <div className="absolute -top-4 left-5 w-9 h-9 bg-[#FCCE00] text-white rounded-full flex items-center justify-center font-bold text-lg shadow">
                       {step.number}
                     </div>
-                    <h3 className="text-base font-bold text-gray-800 mt-3 mb-2">
+                    <h3 className="text-xl font-bold text-gray-800 mt-3 mb-2">
                       {step.title}
                     </h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">
+                    <p className="text-lg text-gray-600 leading-relaxed">
                       {step.description}
                     </p>
                   </div>
@@ -87,8 +80,8 @@ export function AvoidMeansMethods() {
             </div>
 
             {/* Checklist */}
-            <div className="bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-md">
-              <div className="text-lg font-bold text-black mb-6 pb-4 border-b-2 border-dashed border-gray-300">
+            <div className="bg-white border-2 border-gray-200 rounded-2xl p-7 shadow-md">
+              <div className="text-xl font-bold text-black mb-5 pb-4 border-b-2 border-dashed border-gray-300">
                 まず「何をやめたいか」を決める
               </div>
 
@@ -96,7 +89,7 @@ export function AvoidMeansMethods() {
                 {checklistItems.map((item, index) => (
                   <div
                     key={index}
-                    className="flex items-center gap-4 text-lg text-gray-700 font-medium bg-gray-50 px-4 py-3 rounded-lg hover:-translate-y-0.5 transition-transform"
+                    className="flex items-center gap-4 text-xl text-gray-700 font-medium bg-gray-50 px-5 py-4 rounded-lg"
                   >
                     <SquareMinus className="w-6 h-6 text-red-500 flex-shrink-0" />
                     <p>{item}</p>
@@ -116,8 +109,8 @@ export function AvoidMeansMethods() {
             <div className="relative z-10 space-y-8">
               <div className="border-l-4 border-[#FCCE00] pl-5">
                 <p className="text-2xl font-bold leading-relaxed">
-                  DXは"買い物"ではなく<br />
-                  <span className="text-[#FCCE00]">"経営判断"</span>です
+                  DXは\"買い物\"ではなく<br />
+                  <span className="text-[#FCCE00]">\"経営判断\"</span>です
                 </p>
               </div>
 
@@ -131,7 +124,7 @@ export function AvoidMeansMethods() {
               <div className="border-l-4 border-[#FCCE00] pl-5">
                 <p className="text-xl font-bold leading-relaxed">
                   導入した瞬間に<br />
-                  "誰の仕事がどう変わるか"<br />
+                  \"誰の仕事がどう変わるか\"<br />
                   が言えないものは<span className="text-red-500">危険</span>
                 </p>
               </div>
