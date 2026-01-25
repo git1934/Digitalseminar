@@ -2,7 +2,7 @@ export function Chart4() {
   return (
     <section className="h-screen w-screen bg-[#e1e1e1] flex flex-col overflow-hidden">
       {/* タイトル */}
-      <header className="flex flex-col items-center justify-center py-8">
+      <header className="flex items-center justify-center py-8">
         <h1 className="text-6xl font-extrabold">
           アンケート結果４
         </h1>
@@ -10,13 +10,16 @@ export function Chart4() {
 
       {/* グラフ */}
       <div className="flex-1 flex items-center justify-center px-16 pb-12">
-        <div
-          className="w-full h-full max-w-5xl bg-white rounded-2xl shadow-xl
-                        flex items-center justify-center"
-        >
+        <div className="relative w-full h-full max-w-5xl bg-white rounded-2xl shadow-xl">
           <iframe
-            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRmsITImrRvgjWHzby1xJkBUurl2k-qj9shRaxJFilABiZm0IssaZJs5SiOL_IRa2AQVhgGz2Btthqo/pubchart?oid=52863166&amp;format=interactive"
-            className="w-[90%] h-[90%]"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRmsITImrRvgjWHzby1xJkBUurl2k-qj9shRaxJFilABiZm0IssaZJs5SiOL_IRa2AQVhgGz2Btthqo/pubchart?oid=52863166&format=interactive"
+            className="
+              absolute
+              inset-0
+              m-auto
+              w-[700px]
+              h-[450px]
+            "
             frameBorder="0"
             scrolling="no"
           />
