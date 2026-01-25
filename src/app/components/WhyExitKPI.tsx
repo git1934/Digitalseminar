@@ -6,9 +6,9 @@ export function WhyExitKPI() {
       <div className="max-w-[1600px] mx-auto w-full h-full flex flex-col justify-center gap-6">
         {/* Header */}
         <div className="text-center">
-          <div className="inline-block px-5 py-2 bg-[#FCCE00] text-black rounded-full text-sm font-bold uppercase tracking-wider mb-3">
+          {/* <div className="inline-block px-5 py-2 bg-[#FCCE00] text-black rounded-full text-sm font-bold uppercase tracking-wider mb-3">
             Chapter 02 - Deep Dive
-          </div>
+          </div> */}
           <h1 className="text-7xl font-black text-black mb-4 leading-tight tracking-tight">
             撤退KPIが重要な理由
           </h1>

@@ -109,8 +109,8 @@ export function AvoidMeansMethods() {
             <div className="relative z-10 space-y-8">
               <div className="border-l-4 border-[#FCCE00] pl-5">
                 <p className="text-2xl font-bold leading-relaxed">
-                  DXは\"買い物\"ではなく<br />
-                  <span className="text-[#FCCE00]">\"経営判断\"</span>です
+                  DXは買い物ではなく<br />
+                  <span className="text-[#FCCE00]">経営判断</span>です
                 </p>
               </div>
 
@@ -124,7 +124,7 @@ export function AvoidMeansMethods() {
               <div className="border-l-4 border-[#FCCE00] pl-5">
                 <p className="text-xl font-bold leading-relaxed">
                   導入した瞬間に<br />
-                  \"誰の仕事がどう変わるか\"<br />
+                  誰の仕事がどう変わるか<br />
                   が言えないものは<span className="text-red-500">危険</span>
                 </p>
               </div>

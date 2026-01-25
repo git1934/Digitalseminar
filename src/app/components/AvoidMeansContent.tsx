@@ -26,7 +26,7 @@ export function AvoidMeansContent() {
             </h1>
             <p className="text-3xl font-bold text-[#FCCE00] flex items-center gap-3">
               <span className="w-10 h-0.5 bg-[#FCCE00]"></span>
-              デジタルは\"導入\"がゴールではない
+              デジタルは導入がゴールではない
             </p>
           </div>
 

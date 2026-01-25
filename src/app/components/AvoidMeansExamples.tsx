@@ -135,11 +135,11 @@ export function AvoidMeansExamples() {
         </div>
 
         {/* Footer Message */}
-        <div className="mt-4 bg-black rounded-xl py-4 px-6 text-center">
+        {/* <div className="mt-4 bg-black rounded-xl py-4 px-6 text-center">
           <p className="text-xl font-bold text-white leading-snug">
             <span className="text-[#FCCE00]">「何のために？」</span>を問い続けることで、手段の目的化を防ぐ
           </p>
-        </div>
+        </div> */}
       </div>
     </section>
   );
