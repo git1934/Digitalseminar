@@ -26,7 +26,7 @@ export function Hero() {
         {/* Subtitle */}
         <p className="text-4xl font-medium text-[#e1e1e1] mb-8 flex items-center gap-4 tracking-wide">
           <span className="w-10 h-0.5 bg-gray-600"></span>
-          不確実性をチャンスに変える実践フレーム
+          2026年 情報通信トップセミナー
         </p>
 
         {/* Main Title */}
@@ -42,7 +42,7 @@ export function Hero() {
               <User className="w-5 h-5" />
               PRESENTER
             </p>
-            <p>カトウヒロキ／データサイエンティスト</p>
+            <p>NTT西日本株式会社／加藤 大喜</p>
           </div>
           <div className="flex flex-col gap-2">
             <p className="text-base font-bold uppercase tracking-widest text-gray-500 flex items-center gap-2">

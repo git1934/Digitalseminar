@@ -5,16 +5,20 @@ import { Hero } from "./components/Hero";
 import { Survey } from "./components/Survey";
 import { ThreePoints } from "./components/ThreePoints";
 import { Chapter1 } from "./components/Chapter1";
+import { BlankSlide } from "./components/BlankSlide";
+import { Chapter1Description } from "./components/Chapter1Description";
 import { WhyDifferentiation } from "./components/WhyDifferentiation";
 import { DifferentiationContent } from "./components/DifferentiationContent";
 import { DifferentiationPoints } from "./components/DifferentiationPoints";
 import { Chapter2 } from "./components/Chapter2";
+import { Chapter2Description } from "./components/Chapter2Description";
 import { WhyExitKPI } from "./components/WhyExitKPI";
 import { ExitKPIContent } from "./components/ExitKPIContent";
 import { ExitKPIExamples } from "./components/ExitKPIExamples";
 import { ExitIsLossCutting } from "./components/ExitIsLossCutting";
 import { DigitalInvestmentPrinciple } from "./components/DigitalInvestmentPrinciple";
 import { Chapter3 } from "./components/Chapter3";
+import { Chapter3Description } from "./components/Chapter3Description";
 import { AvoidMeansContent } from "./components/AvoidMeansContent";
 import { AvoidMeansExamples } from "./components/AvoidMeansExamples";
 import { AvoidMeansMethods } from "./components/AvoidMeansMethods";
@@ -30,16 +34,22 @@ export default function App() {
     { component: <Survey />, title: 'Survey' },
     { component: <ThreePoints />, title: 'Three Points' },
     { component: <Chapter1 />, title: 'Chapter 1' },
+    { component: <BlankSlide />, title: 'Blank Slide' },
+    { component: <Chapter1Description />, title: 'Chapter 1 Description' },
     { component: <WhyDifferentiation />, title: 'Why Differentiation' },
     { component: <DifferentiationContent />, title: 'Differentiation Content' },
     { component: <DifferentiationPoints />, title: 'Differentiation Points' },
     { component: <Chapter2 />, title: 'Chapter 2' },
+    { component: <BlankSlide />, title: 'Blank Slide' },
+    { component: <Chapter2Description />, title: 'Chapter 2 Description' },
     { component: <WhyExitKPI />, title: 'Why Exit KPI' },
     { component: <ExitKPIContent />, title: 'Exit KPI Content' },
     { component: <ExitKPIExamples />, title: 'Exit KPI Examples' },
     { component: <ExitIsLossCutting />, title: 'Exit Is Loss Cutting' },
     { component: <DigitalInvestmentPrinciple />, title: 'Digital Investment Principle' },
     { component: <Chapter3 />, title: 'Chapter 3' },
+    { component: <BlankSlide />, title: 'Blank Slide' },
+    { component: <Chapter3Description />, title: 'Chapter 3 Description' },
     { component: <AvoidMeansContent />, title: 'Avoid Means Content' },
     { component: <AvoidMeansExamples />, title: 'Avoid Means Examples' },
     { component: <AvoidMeansMethods />, title: 'Avoid Means Methods' },

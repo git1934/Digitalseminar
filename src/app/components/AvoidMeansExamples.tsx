@@ -59,32 +59,31 @@ export function AvoidMeansExamples() {
   ];
 
   return (
-    <section className="h-screen overflow-hidden flex items-center justify-center bg-white px-12 py-10">
+    <section className="h-screen overflow-hidden flex items-center justify-center bg-[#e1e1e1] px-10 py-8">
       <div className="max-w-[1440px] w-full h-full flex flex-col">
         {/* Header */}
-        <div className="mb-6">
-          <h1 className="text-5xl font-black text-black leading-tight mb-1">
-            手段が目的化してしまった<span className="text-red-600">「悪い事例」</span>
+        <div className="mb-4">
+          <h1 className="text-5xl font-black text-black leading-tight mb-2">
+            手段が目的化してしまった<span className="text-black bg-[#FCCE00] px-3 py-1 rounded-xl ml-3">「悪い事例」</span>
           </h1>
-          <p className="text-xl text-gray-500">（実務あるある）</p>
         </div>
 
         {/* Examples Grid - 5 items in 2 rows */}
-        <div className="grid grid-cols-3 gap-6 flex-1">
+        <div className="grid grid-cols-3 gap-4 flex-1">
           {examples.map((example, index) => {
             const Icon = example.icon;
 
             return (
               <div
                 key={index}
-                className="bg-white border-3 border-gray-200 rounded-xl p-4 shadow-lg flex flex-col"
+                className="bg-white border-4 border-gray-300 rounded-2xl p-4 shadow-xl flex flex-col"
               >
                 {/* Header */}
-                <div className="flex items-center gap-3 mb-3 pb-3 border-b-2 border-gray-100">
-                  <div className="flex-shrink-0 w-10 h-10 bg-red-50 rounded-lg flex items-center justify-center">
-                    <Icon className="w-5 h-5 text-red-500" />
+                <div className="flex items-center gap-2 mb-3 pb-2 border-b-2 border-gray-200">
+                  <div className="flex-shrink-0 w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center">
+                    <Icon className="w-5 h-5 text-black" />
                   </div>
-                  <div className="flex-shrink-0 w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center font-black text-sm">
+                  <div className="flex-shrink-0 w-8 h-8 bg-black text-[#FCCE00] rounded-full flex items-center justify-center font-black text-sm">
                     {example.number}
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 leading-tight flex-1">
@@ -93,30 +92,30 @@ export function AvoidMeansExamples() {
                 </div>
 
                 {/* Content - Compact */}
-                <div className="space-y-2.5 flex-1">
+                <div className="space-y-2 flex-1">
                   {/* 手段 */}
                   <div>
-                    <div className="text-xs font-bold text-gray-400 mb-1">手段</div>
-                    <p className="text-base font-semibold text-gray-700 bg-gray-50 rounded px-2 py-1.5">
+                    <div className="text-xs font-bold text-gray-500 mb-1">手段</div>
+                    <p className="text-base font-semibold text-gray-800 bg-gray-100 rounded-lg px-2 py-1.5 leading-tight">
                       {example.means}
                     </p>
                   </div>
 
                   {/* 本来の目的 */}
                   <div>
-                    <div className="text-xs font-bold text-gray-400 mb-1">本来の目的</div>
-                    <p className="text-base font-semibold text-gray-700 bg-[#FCCE00]/10 rounded px-2 py-1.5">
+                    <div className="text-xs font-bold text-gray-500 mb-1">本来の目的</div>
+                    <p className="text-base font-semibold text-gray-800 bg-[#FCCE00]/20 rounded-lg px-2 py-1.5 leading-tight">
                       {example.purpose}
                     </p>
                   </div>
 
                   {/* 実際に起きたこと */}
                   <div>
-                    <div className="text-xs font-bold text-red-500 mb-1.5">実際に起きたこと</div>
+                    <div className="text-xs font-bold text-gray-700 mb-1">実際に起きたこと</div>
                     <div className="space-y-1">
                       {example.reality.map((item, i) => (
                         <div key={i} className="flex items-start gap-1.5">
-                          <XCircle className="w-3.5 h-3.5 text-red-500 flex-shrink-0 mt-0.5" />
+                          <XCircle className="w-3.5 h-3.5 text-gray-600 flex-shrink-0 mt-0.5" />
                           <p className="text-sm text-gray-700 leading-tight">{item}</p>
                         </div>
                       ))}
@@ -125,8 +124,8 @@ export function AvoidMeansExamples() {
                 </div>
 
                 {/* Summary */}
-                <div className="mt-3 pt-3 border-t-2 border-dashed border-red-200">
-                  <p className="text-base font-black text-red-600 text-center">
+                <div className="mt-3 pt-3 border-t-2 border-dashed border-gray-300">
+                  <p className="text-base font-black text-gray-800 text-center leading-tight">
                     👉 {example.summary}
                   </p>
                 </div>
@@ -136,8 +135,8 @@ export function AvoidMeansExamples() {
         </div>
 
         {/* Footer Message */}
-        <div className="mt-6 bg-black rounded-xl py-4 px-6 text-center">
-          <p className="text-2xl font-bold text-white">
+        <div className="mt-4 bg-black rounded-xl py-4 px-6 text-center">
+          <p className="text-xl font-bold text-white leading-snug">
             <span className="text-[#FCCE00]">「何のために？」</span>を問い続けることで、手段の目的化を防ぐ
           </p>
         </div>

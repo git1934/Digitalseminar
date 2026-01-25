@@ -5,9 +5,6 @@ export function Chapter3() {
         <div className="mb-12">
           <span className="text-[#FCCE00] text-9xl font-bold">3章</span>
         </div>
-        <h2 className="text-9xl font-bold text-white leading-tight">
-          手段の目的化を防ぐ
-        </h2>
       </div>
     </section>
   );

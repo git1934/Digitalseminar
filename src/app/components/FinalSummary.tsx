@@ -4,7 +4,7 @@ export function FinalSummary() {
   const summaryPoints = [
     {
       number: '01',
-      title: '差別化は、ツールではなく\"経営判断\"',
+      title: '差別化は、ツールではなく経営判断',
       description: '「どのAIを使うか」ではなく「どこで勝つか」を決める',
       color: 'blue',
     },

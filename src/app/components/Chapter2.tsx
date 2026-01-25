@@ -5,9 +5,6 @@ export function Chapter2() {
         <div className="mb-12">
           <span className="text-[#FCCE00] text-9xl font-bold">2章</span>
         </div>
-        <h2 className="text-9xl font-bold text-white leading-tight">
-          撤退KPIを立てる
-        </h2>
       </div>
     </section>
   );
