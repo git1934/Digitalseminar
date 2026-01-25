@@ -1,30 +1,43 @@
 export function ThreePoints() {
   return (
-    <section className="h-screen overflow-hidden flex items-center justify-center bg-black">
-      <div className="w-full h-full flex items-center justify-center px-20">
-        <div className="flex items-center justify-center gap-32 w-full">
-          {/* 1 */}
-          <div className="flex-1 flex items-center justify-center">
-            <span className="text-[280px] font-black text-[#FCCE00] leading-none tracking-tighter">
-              1
-            </span>
-          </div>
+    <section className="relative h-screen w-screen overflow-hidden bg-black flex items-center justify-center">
 
-          {/* 2 */}
-          <div className="flex-1 flex items-center justify-center">
-            <span className="text-[280px] font-black text-[#FCCE00] leading-none tracking-tighter">
-              2
-            </span>
-          </div>
+      {/* 幾何学背景 */}
+      <div
+        className="
+          absolute inset-0
+          bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.08)_1px,transparent_0)]
+          [background-size:48px_48px]
+        "
+      />
 
-          {/* 3 */}
-          <div className="flex-1 flex items-center justify-center">
-            <span className="text-[280px] font-black text-[#FCCE00] leading-none tracking-tighter">
-              3
-            </span>
-          </div>
-        </div>
-      </div>
+      {/* 背景にうっすら入る斜めライン */}
+      <div
+        className="
+          absolute inset-0
+          bg-gradient-to-br
+          from-white/5
+          via-transparent
+          to-transparent
+        "
+      />
+
+      {/* メインテキスト */}
+      <h1
+        className="
+          relative z-10
+          text-[180px] md:text-[260px] lg:text-[320px]
+          font-extrabold
+          tracking-tight
+          text-white/8
+          text-center
+          leading-none
+          select-none
+        "
+      >
+        MAGIC NUMBER 3
+      </h1>
+
     </section>
   );
 }

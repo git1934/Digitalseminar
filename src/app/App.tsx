@@ -3,6 +3,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Introduction } from "./components/Introduction";
 import { Hero } from "./components/Hero";
 import { Survey } from "./components/Survey";
+import { POSExpertise } from "./components/POSExpertise";
 import { ThreePoints } from "./components/ThreePoints";
 import { Chapter1 } from "./components/Chapter1";
 import { Chart1 } from "./components/Chart1";
@@ -37,6 +38,7 @@ export default function App() {
     { component: <Hero />, title: 'Hero' },
     { component: <Introduction />, title: 'Introduction' },
     { component: <Survey />, title: 'Survey' },
+    { component: <POSExpertise />, title: 'POS Expertise' },
     { component: <ThreePoints />, title: 'Three Points' },
     { component: <Chapter1 />, title: 'Chapter 1' },
     { component: <Chart1 />, title: 'Chart 1' },
