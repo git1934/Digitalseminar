@@ -86,7 +86,7 @@ export function AvoidMeansContent() {
                 <Compass className="w-14 h-14 text-[#FCCE00]" />
               </div>
               <div className="flex-1">
-                <h3 className="text-3xl font-bold text-white mb-3">迷子にならないために</h3>
+                {/* <h3 className="text-3xl font-bold text-white mb-3">迷子にならないために</h3> */}
                 <p className="text-2xl text-gray-300 leading-relaxed">
                   ツールを選ぶ前に、まず<strong className="text-[#FCCE00] font-bold">「目的の言語化」</strong>が必要です。
                   デジタルは魔法の杖ではなく、目的を達成するための道具にすぎません。

@@ -1,0 +1,7 @@
+export function BlankSlide2() {
+  return (
+    <section className="h-screen overflow-hidden bg-[#e1e1e1]">
+      {/* 完全な空白ページ - 2章前の意図的な"間"を作るためのバッファ */}
+    </section>
+  );
+}

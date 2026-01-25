@@ -25,9 +25,7 @@ export function WhyDifferentiation() {
         {/* Header */}
         <div className="mb-8 text-center">
           <div className="flex items-center justify-center gap-4 mb-4">
-            <div className="w-14 h-14 bg-[#FCCE00] rounded-full flex items-center justify-center">
-              <Target className="w-8 h-8 text-black" />
-            </div>
+  
           </div>
           <h1 className="text-7xl font-black text-black leading-tight">
             中小企業に差別化が重要な理由
