@@ -5,7 +5,8 @@ import { Hero } from "./components/Hero";
 import { Survey } from "./components/Survey";
 import { ThreePoints } from "./components/ThreePoints";
 import { Chapter1 } from "./components/Chapter1";
-import { BlankSlide1 } from "./components/BlankSlide1";
+import { Chart1 } from "./components/Chart1";
+import { Chart2 } from "./components/Chart2";
 import { Chapter1Description } from "./components/Chapter1Description";
 import { WhyDifferentiation } from "./components/WhyDifferentiation";
 import { DifferentiationContent } from "./components/DifferentiationContent";
@@ -36,7 +37,8 @@ export default function App() {
     { component: <Survey />, title: 'Survey' },
     { component: <ThreePoints />, title: 'Three Points' },
     { component: <Chapter1 />, title: 'Chapter 1' },
-    { component: <BlankSlide1 />, title: 'Blank Slide 1' },
+    { component: <Chart1 />, title: 'Chart 1' },
+    { component: <Chart2 />, title: 'Chart 2' },
     { component: <Chapter1Description />, title: 'Chapter 1 Description' },
     { component: <WhyDifferentiation />, title: 'Why Differentiation' },
     { component: <DifferentiationContent />, title: 'Differentiation Content' },
