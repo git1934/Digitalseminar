@@ -12,7 +12,8 @@ import { WhyDifferentiation } from "./components/WhyDifferentiation";
 import { DifferentiationContent } from "./components/DifferentiationContent";
 import { DifferentiationPoints } from "./components/DifferentiationPoints";
 import { Chapter2 } from "./components/Chapter2";
-import { BlankSlide2 } from "./components/BlankSlide2";
+import { Chart3 } from "./components/Chart3";
+import { Chart4 } from "./components/Chart4";
 import { Chapter2Description } from "./components/Chapter2Description";
 import { WhyExitKPI } from "./components/WhyExitKPI";
 import { ExitKPIContent } from "./components/ExitKPIContent";
@@ -20,7 +21,8 @@ import { ExitKPIExamples } from "./components/ExitKPIExamples";
 import { ExitIsLossCutting } from "./components/ExitIsLossCutting";
 import { DigitalInvestmentPrinciple } from "./components/DigitalInvestmentPrinciple";
 import { Chapter3 } from "./components/Chapter3";
-import { BlankSlide3 } from "./components/BlankSlide3";
+import { Chart5 } from "./components/Chart5";
+import { Chart6 } from "./components/Chart6";
 import { Chapter3Description } from "./components/Chapter3Description";
 import { AvoidMeansContent } from "./components/AvoidMeansContent";
 import { AvoidMeansExamples } from "./components/AvoidMeansExamples";
@@ -44,7 +46,8 @@ export default function App() {
     { component: <DifferentiationContent />, title: 'Differentiation Content' },
     { component: <DifferentiationPoints />, title: 'Differentiation Points' },
     { component: <Chapter2 />, title: 'Chapter 2' },
-    { component: <BlankSlide2 />, title: 'Blank Slide 2' },
+    { component: <Chart3 />, title: 'Chart 3' },
+    { component: <Chart4 />, title: 'Chart 4' },
     { component: <Chapter2Description />, title: 'Chapter 2 Description' },
     { component: <WhyExitKPI />, title: 'Why Exit KPI' },
     { component: <ExitKPIContent />, title: 'Exit KPI Content' },
@@ -52,7 +55,8 @@ export default function App() {
     { component: <ExitIsLossCutting />, title: 'Exit Is Loss Cutting' },
     { component: <DigitalInvestmentPrinciple />, title: 'Digital Investment Principle' },
     { component: <Chapter3 />, title: 'Chapter 3' },
-    { component: <BlankSlide3 />, title: 'Blank Slide 3' },
+    { component: <Chart5 />, title: 'Chart 5' },
+    { component: <Chart6 />, title: 'Chart 6' },
     { component: <Chapter3Description />, title: 'Chapter 3 Description' },
     { component: <AvoidMeansContent />, title: 'Avoid Means Content' },
     { component: <AvoidMeansExamples />, title: 'Avoid Means Examples' },
