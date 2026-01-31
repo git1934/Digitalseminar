@@ -22,12 +22,12 @@ export function DifferentiationContent() {
               </span>
             </div>
             <h1 className="text-6xl font-black text-black mb-4 leading-tight">
-              徹底的な差別化
+              ツールではなく、アイデアで差をつける
             </h1>
-            <p className="text-3xl font-bold text-[#FCCE00] flex items-center gap-3">
+            {/* <p className="text-3xl font-bold text-[#FCCE00] flex items-center gap-3">
               <span className="w-10 h-0.5 bg-[#FCCE00]"></span>
               ツールではなく、経営で差をつける
-            </p>
+            </p> */}
           </div>
 
           {/* Narrative Content */}
@@ -53,7 +53,7 @@ export function DifferentiationContent() {
               <div className="flex-1">
                 <p className="text-2xl leading-relaxed text-gray-700">
                   しかし、「AIを使っている限り、どのAIモデルを使っても結果は似通ってくる」という現実があります。
-                  ChatGPTでも他社ツールでも、<strong className="text-black font-bold bg-[#FCCE00]/20 px-1">\"ツールそのもの\"では差別化しづらくなっています。</strong>
+                  ChatGPTでも他社ツールでも、<strong className="text-black font-bold bg-[#FCCE00]/20 px-1">ツールそのものでは差別化しづらくなっています。</strong>
                 </p>
               </div>
             </div>
@@ -66,7 +66,7 @@ export function DifferentiationContent() {
                 </div>
                 <div className="flex-1">
                   <p className="text-2xl text-gray-800 font-medium leading-relaxed">
-                    この結果、多くの企業が<strong className="text-black font-bold">\"他社と同じような取り組み\"</strong>に陥っています。
+                    この結果、多くの企業が<strong className="text-black font-bold">他社と同じような取り組み</strong>に陥っています。
                   </p>
                 </div>
               </div>
@@ -81,7 +81,7 @@ export function DifferentiationContent() {
                 <h3 className="text-3xl font-bold text-white mb-3">重要なのは「経営視点」</h3>
                 <p className="text-2xl text-gray-300 leading-relaxed">
                   ツール選びで勝負するのではなく、
-                  <strong className="text-[#FCCE00] font-bold">\"経営視点での差別化\"</strong>こそが、競争優位を生み出します。
+                  <strong className="text-[#FCCE00] font-bold">経営視点での差別化</strong>こそが、競争優位を生み出します。
                 </p>
               </div>
             </div>

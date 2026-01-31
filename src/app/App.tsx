@@ -31,6 +31,9 @@ import { AvoidMeansMethods } from "./components/AvoidMeansMethods";
 import { FinalSummary } from "./components/FinalSummary";
 import { KeyMessage } from "./components/KeyMessage";
 import { ThankYou } from "./components/ThankYou";
+import { DramaticPause } from "./components/DramaticPause";
+import { SimpleAnswerSlide } from "./components/SimpleAnswerSlide";
+import { SuccessCaseSlide } from "./components/SuccessCaseSlide";
 
 export default function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -47,6 +50,9 @@ export default function App() {
     { component: <Chart2 />, title: 'Chart 2' },
     { component: <Chapter1Description />, title: 'Chapter 1 Description' },
     { component: <WhyDifferentiation />, title: 'Why Differentiation' },
+    { component: <DramaticPause />, title: 'Dramatic Pause' },
+    { component: <SimpleAnswerSlide />, title: 'Simple Answer Slide' },
+    { component: <SuccessCaseSlide />, title: 'Success Case Slide' },
     { component: <DifferentiationContent />, title: 'Differentiation Content' },
     { component: <DifferentiationPoints />, title: 'Differentiation Points' },
     { component: <Chapter2 />, title: 'Chapter 2' },

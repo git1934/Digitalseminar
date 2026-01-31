@@ -22,12 +22,12 @@ export function ExitKPIContent() {
               </span>
             </div>
             <h1 className="text-6xl font-black text-black mb-4 leading-tight">
-              撤退KPIを立てる
+              やめ方を決めれば、もっと挑戦できる
             </h1>
-            <p className="text-3xl font-bold text-[#FCCE00] flex items-center gap-3">
+            {/* <p className="text-3xl font-bold text-[#FCCE00] flex items-center gap-3">
               <span className="w-10 h-0.5 bg-[#FCCE00]"></span>
               やめ方を決めると、挑戦できる
-            </p>
+            </p> */}
           </div>
 
           {/* Narrative Content */}

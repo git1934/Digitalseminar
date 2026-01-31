@@ -6,7 +6,7 @@ export function ThreePoints() {
       <h2
         className="
           absolute
-          text-[120px] md:text-[180px] lg:text-[220px]
+          text-[120px] md:text-[160px] lg:text-[180px]
           font-extrabold
           tracking-tight
           text-white/30

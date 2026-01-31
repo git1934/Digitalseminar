@@ -34,8 +34,8 @@ export function KeyMessage() {
   <h1
     className="
       text-[240px]
-      md:text-[340px]
-      lg:text-[380px]
+      md:text-[320px]
+      lg:text-[340px]
       font-black
       tracking-wider
       text-white
