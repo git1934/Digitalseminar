@@ -29,6 +29,8 @@ import { AvoidMeansContent } from "./components/AvoidMeansContent";
 import { AvoidMeansExamples } from "./components/AvoidMeansExamples";
 import { AvoidMeansMethods } from "./components/AvoidMeansMethods";
 import { FinalSummary } from "./components/FinalSummary";
+import { KeyMessage } from "./components/KeyMessage";
+import { ThankYou } from "./components/ThankYou";
 
 export default function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -64,6 +66,8 @@ export default function App() {
     { component: <AvoidMeansExamples />, title: 'Avoid Means Examples' },
     { component: <AvoidMeansMethods />, title: 'Avoid Means Methods' },
     { component: <FinalSummary />, title: 'Final Summary' },
+    { component: <KeyMessage />, title: 'Key Message' },
+    { component: <ThankYou />, title: 'Thank You' },
   ];
 
   const totalSlides = slides.length;

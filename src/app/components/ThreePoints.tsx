@@ -1,43 +1,35 @@
 export function ThreePoints() {
   return (
     <section className="relative h-screen w-screen overflow-hidden bg-black flex items-center justify-center">
-
-      {/* 幾何学背景 */}
-      <div
+      
+      {/* 背景文字：MAGIC NUMBER */}
+      <h2
         className="
-          absolute inset-0
-          bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.08)_1px,transparent_0)]
-          [background-size:48px_48px]
+          absolute
+          text-[120px] md:text-[180px] lg:text-[220px]
+          font-extrabold
+          tracking-tight
+          text-white/30
+          select-none
+          whitespace-nowrap
         "
-      />
+      >
+        MAGIC NUMBER
+      </h2>
 
-      {/* 背景にうっすら入る斜めライン */}
-      <div
-        className="
-          absolute inset-0
-          bg-gradient-to-br
-          from-white/5
-          via-transparent
-          to-transparent
-        "
-      />
-
-      {/* メインテキスト */}
+      {/* メイン文字：3 */}
       <h1
         className="
           relative z-10
-          text-[180px] md:text-[260px] lg:text-[320px]
-          font-extrabold
-          tracking-tight
-          text-white/8
-          text-center
+          text-[280px] md:text-[420px] lg:text-[520px]
+          font-black
           leading-none
+          text-[#FCCE00]
           select-none
         "
       >
-        MAGIC NUMBER 3
+        3
       </h1>
-
     </section>
   );
 }

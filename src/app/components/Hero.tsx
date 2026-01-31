@@ -1,25 +1,82 @@
-import { Calendar, User } from 'lucide-react';
+import { Calendar, User } from "lucide-react";
+import { motion } from "motion/react";
 
 export function Hero() {
   return (
-    <section className="h-screen overflow-hidden flex flex-col items-center justify-center bg-black">
-      {/* Decorative Circle Elements */}
-      <div className="absolute -top-24 -right-24 w-[700px] h-[700px] rounded-full border-2 border-[#FCCE00] opacity-15 z-0"></div>
-      <div className="absolute top-24 right-12 w-[400px] h-[400px] rounded-full bg-[#333] opacity-30 z-0"></div>
-      <div className="absolute -bottom-48 -left-24 w-[600px] h-[600px] rounded-full bg-[#222] opacity-40 z-0"></div>
+    <section className="relative h-screen overflow-hidden flex flex-col items-center justify-center bg-black">
+      
+      {/* ======================================= */}
+      {/* 幾何学円背景（パキッと・発光なし） */}
+      {/* ======================================= */}
 
-      {/* Tech Pattern - Dot Grid */}
-      <svg className="absolute top-0 right-0 bottom-0 w-[40%] z-[1] opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <pattern id="grid-dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-            <circle cx="2" cy="2" r="2" fill="white" />
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#grid-dots)" />
-      </svg>
+      {/* Circle 1（メインの黄色リング） */}
+      <motion.div
+        className="
+          absolute -top-32 -right-32
+          w-[780px] h-[780px]
+          rounded-full
+          border-[4px] border-[#FCCE00]
+          opacity-25
+        "
+        animate={{
+          x: [0, -40, 0],
+          y: [0, 30, 0],
+          scale: [1, 1.08, 1],
+        }}
+        transition={{
+          duration: 16,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      />
 
+      {/* Circle 2（黄色の塗り円） */}
+      <motion.div
+        className="
+          absolute top-28 right-24
+          w-[420px] h-[420px]
+          rounded-full
+          bg-[#FCCE00]
+          opacity-12
+        "
+        animate={{
+          x: [0, 50, 0],
+          y: [0, -40, 0],
+          scale: [1, 1.12, 1],
+        }}
+        transition={{
+          duration: 20,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      />
+
+      {/* Circle 3（暗い補助円） */}
+      <motion.div
+        className="
+          absolute -bottom-56 -left-32
+          w-[650px] h-[650px]
+          rounded-full
+          bg-[#222]
+          opacity-45
+        "
+        animate={{
+          x: [0, -60, 0],
+          y: [0, 50, 0],
+          scale: [1, 1.15, 1],
+        }}
+        transition={{
+          duration: 22,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      />
+
+      {/* ======================================= */}
       {/* Main Content */}
+      {/* ======================================= */}
       <div className="relative z-10 text-white px-24 max-w-7xl w-full flex flex-col justify-center h-full">
+        
         {/* Accent Bar */}
         <div className="w-32 h-2 bg-[#FCCE00] mb-8"></div>
 
@@ -32,11 +89,14 @@ export function Hero() {
         {/* Main Title */}
         <h1 className="text-8xl font-black leading-tight mb-24 tracking-tight">
           これからの変化に備える<br />
-          <span className="text-[#FCCE00]">中小企業のデジタル戦略</span>
+          <span className="text-[#FCCE00]">
+            中小企業のデジタル戦略
+          </span>
         </h1>
 
         {/* Footer Info */}
         <div className="flex gap-16 text-2xl text-[#e1e1e1] border-t border-gray-700 pt-8 max-w-3xl">
+          
           <div className="flex flex-col gap-2">
             <p className="text-base font-bold uppercase tracking-widest text-gray-500 flex items-center gap-2">
               <User className="w-5 h-5" />
@@ -44,12 +104,13 @@ export function Hero() {
             </p>
             <p>NTT西日本株式会社／加藤 大喜</p>
           </div>
+
           <div className="flex flex-col gap-2">
             <p className="text-base font-bold uppercase tracking-widest text-gray-500 flex items-center gap-2">
               <Calendar className="w-5 h-5" />
               DATE
             </p>
-            <p>2026年1月12日</p>
+            <p>2026年2月25日</p>
           </div>
         </div>
       </div>
