@@ -1,10 +1,10 @@
 export function Chart4() {
   return (
-    <section className="h-screen w-screen bg-[#e1e1e1] flex flex-col overflow-hidden">
+    <section className="h-screen w-screen bg-[#000] flex flex-col overflow-hidden">
       {/* タイトル */}
       <header className="flex items-center justify-center py-8">
-        <h1 className="text-6xl font-extrabold">
-          アンケート結果４
+        <h1 className="text-6xl font-extrabold text-[#fff]">
+          セミナーで聞きたいこと
         </h1>
       </header>
 

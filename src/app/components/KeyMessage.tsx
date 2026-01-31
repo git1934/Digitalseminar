@@ -29,12 +29,25 @@ export function KeyMessage() {
       </div>
 
       {/* メイン文字 */}
-      <div className="relative z-10 text-center">
-        <h1 className="text-[180px] md:text-[240px] font-black tracking-wider text-white leading-none 
-                       drop-shadow-[0_0_50px_rgba(252,206,0,0.2)] select-none">
-          損小利大
-        </h1>
-      </div>
+   {/* メイン文字 */}
+<div className="relative z-10 text-center">
+  <h1
+    className="
+      text-[240px]
+      md:text-[340px]
+      lg:text-[380px]
+      font-black
+      tracking-wider
+      text-white
+      leading-none
+      drop-shadow-[0_0_50px_rgba(252,206,0,0.2)]
+      select-none
+    "
+  >
+    損小利大
+  </h1>
+</div>
+
 
       {/* アニメーション定義 */}
       <style>{`

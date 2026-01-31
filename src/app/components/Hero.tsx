@@ -15,7 +15,7 @@ export function Hero() {
           absolute -top-32 -right-32
           w-[780px] h-[780px]
           rounded-full
-          border-[4px] border-[#FCCE00]
+          border-[3px] border-[#FCCE00]
           opacity-25
         "
         animate={{
@@ -71,7 +71,28 @@ export function Hero() {
           ease: "easeInOut",
         }}
       />
-
+      
+      {/* Circle 2（黄色の塗り円） */}
+      <motion.div
+        className="
+          absolute -bottom-76 -left-48
+          w-[640px] h-[600px]
+          rounded-full
+          border-[1px] border-[#FCCE00]
+          opacity-32
+        "
+        animate={{
+          x: [0, -40, 0],
+          y: [0, 30, 0],
+          scale: [1, 1.08, 1],
+        }}
+        transition={{
+          duration: 20,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      />
+      
       {/* ======================================= */}
       {/* Main Content */}
       {/* ======================================= */}

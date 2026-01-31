@@ -5,7 +5,7 @@ export function WhyDifferentiation() {
     {
       number: '01',
       title: '大企業との競争で生き残るため',
-      description: '資本力・ブランド力で勝てない領域では、独自の価値で勝負する',
+      description: '資本力・ブランド力で負けないために、自分の土俵で勝負する',
     },
     {
       number: '02',
@@ -15,7 +15,7 @@ export function WhyDifferentiation() {
     {
       number: '03',
       title: '選ばれる理由を明確にするため',
-      description: '「なぜあなたから買うのか？」に答えられなければ顧客は離れる',
+      description: '「なぜあなたから買うのか？」に答えられなければ顧客は離れてしまう',
     },
   ];
 
@@ -60,11 +60,11 @@ export function WhyDifferentiation() {
         </div>
 
         {/* Footer Message */}
-        <div className="mt-8 text-center">
+        {/* <div className="mt-8 text-center">
           <p className="text-3xl font-black text-black">
             差別化なき企業に、<span className="text-[#FCCE00] bg-black px-3 py-1 rounded">未来はない</span>
           </p>
-        </div>
+        </div> */}
       </div>
     </section>
   );

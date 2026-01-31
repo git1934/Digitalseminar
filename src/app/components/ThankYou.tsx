@@ -12,6 +12,15 @@ export function ThankYou() {
         />
       </div>
 
+      <div className="absolute -bottom-18 -left-34 opacity-30 pointer-events-none">
+        <img
+          src={starSvg}
+          alt=""
+          className="w-[320px] h-[320px] object-contain animate-[spin_90s_linear_infinite]"
+        />
+      </div>
+
+      
       {/* 背景の巨大な英語テキスト */}
       <div className="absolute inset-0 flex items-center justify-center">
         <h2
@@ -31,11 +40,11 @@ export function ThankYou() {
         </h1>
 
         {/* 装飾的なアクセント */}
-        <div className="mt-12 flex justify-center gap-2">
+        {/* <div className="mt-12 flex justify-center gap-2">
           <div className="w-16 h-1 bg-[#FCCE00]"></div>
           <div className="w-16 h-1 bg-white/30"></div>
           <div className="w-16 h-1 bg-[#FCCE00]"></div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
