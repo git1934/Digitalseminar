@@ -16,10 +16,10 @@ export function DifferentiationContent() {
           {/* Header Section */}
           <div className="mb-10 pb-6 border-b-2 border-[#e1e1e1]">
             <div className="flex items-center gap-2 mb-3">
-              <div className="w-1 h-6 bg-[#FCCE00]"></div>
-              <span className="text-base font-bold text-gray-500 uppercase tracking-wider">
+              {/* <div className="w-1 h-6 bg-[#FCCE00]"></div> */}
+              {/* <span className="text-base font-bold text-gray-500 uppercase tracking-wider">
                 Chapter 01
-              </span>
+              </span> */}
             </div>
             <h1 className="text-6xl font-black text-black mb-4 leading-tight">
               ツールではなく、アイデアで差をつける
@@ -39,8 +39,8 @@ export function DifferentiationContent() {
               </div>
               <div className="flex-1">
                 <p className="text-2xl leading-relaxed text-gray-700">
-                  生成AIやAIエージェントの登場により、デジタル活用のハードルは一気に下がりました。
-                  今では、<strong className="text-black font-bold bg-[#FCCE00]/20 px-1">誰でも同じようなツールを、同じような価格で使える時代</strong>です。
+                  生成AIやAIエージェントの登場により、デジタル活用のハードルは一気に下がりました。<br/>
+                  今では、高機能なツールを誰でも同じような価格で使える時代です。
                 </p>
               </div>
             </div>
@@ -52,8 +52,8 @@ export function DifferentiationContent() {
               </div>
               <div className="flex-1">
                 <p className="text-2xl leading-relaxed text-gray-700">
-                  しかし、「AIを使っている限り、どのAIモデルを使っても結果は似通ってくる」という現実があります。
-                  ChatGPTでも他社ツールでも、<strong className="text-black font-bold bg-[#FCCE00]/20 px-1">ツールそのものでは差別化しづらくなっています。</strong>
+                  しかし、ツールに依存している限り、どのモデルを使っても結果は似通ってきます。<br/>
+                  ChatGPTでも他社ツールでも、<strong className="text-black font-bold bg-[#FCCE00]/20 px-1">ツールそのものでは経営が差別化しづらくなっています。</strong>
                 </p>
               </div>
             </div>

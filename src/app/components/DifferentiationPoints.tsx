@@ -25,9 +25,9 @@ export function DifferentiationPoints() {
         {/* Left Column: Questions */}
         <div className="flex-1 px-20 py-16 flex flex-col justify-center bg-white relative z-10">
           <div className="mb-12">
-            <div className="inline-block text-base font-bold text-[#FCCE00] tracking-widest uppercase mb-4 border-b-2 border-[#FCCE00] pb-2">
+            {/* <div className="inline-block text-base font-bold text-[#FCCE00] tracking-widest uppercase mb-4 border-b-2 border-[#FCCE00] pb-2">
               KEY QUESTIONS
-            </div>
+            </div> */}
             <h1 className="text-6xl font-black text-black mb-4 leading-tight">
               差別化のポイント
             </h1>
@@ -80,13 +80,12 @@ export function DifferentiationPoints() {
           <div className="relative z-20">
             <div className="mb-10 border-l-4 border-[#FCCE00] pl-6">
               <p className="text-2xl text-gray-400 leading-relaxed mb-6">
-                この問いに対する答えは、<br />
-                会社ごとに、業種ごとに、<br />
-                そして<strong className="text-white">社長ごとに違います。</strong>
+                この問いに対する答えは、
+                会社ごとに違います。
               </p>
               <p className="text-2xl text-gray-400 leading-relaxed">
-                差別化とは、最新ツールを使うことではなく、<br />
-                「自社はどこで勝ちたいのか」を<br />
+                差別化とは、最新ツールを使うことではなく、
+                自社はどこで勝ちたいのかを
                 明確にすることです。
               </p>
             </div>
@@ -99,9 +98,9 @@ export function DifferentiationPoints() {
               <h2 className="text-5xl font-black text-[#FCCE00] mb-5">
                 "どこで勝つか"
               </h2>
-              <p className="text-lg text-gray-400 italic">
+              {/* <p className="text-lg text-gray-400 italic">
                 Technology serves Strategy.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

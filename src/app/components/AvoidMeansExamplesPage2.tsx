@@ -1,48 +1,48 @@
 import {
-  Package,
-  ThumbsUp,
-  FileText,
+  TrendingUp,
+  Coins,
+  BarChart,
   XCircle,
   ArrowRight
 } from "lucide-react";
 
-export function AvoidMeansExamplesPage1() {
+export function AvoidMeansExamplesPage2() {
   const examples = [
     {
-      icon: Package,
-      number: "01",
-      title: "DX導入がゴール",
-      means: "DXツールを導入",
-      purpose: "業務効率化・利益改善",
-      reality: ["使いこなせない", "Excelに逆戻り", "導入が成果扱い"],
-      summary: "使われないシステム",
+      icon: TrendingUp,
+      number: "04",
+      title: "KPIが目的化",
+      means: "KPIを細かく設定",
+      purpose: "正しい判断の指標",
+      reality: ["数字達成が目的", "見栄え重視", "本質が見えない"],
+      summary: "数字は達成、事業は停滞",
     },
     {
-      icon: ThumbsUp,
-      number: "02",
-      title: "SNS運用が仕事",
-      means: "SNS毎日投稿",
-      purpose: "集客・売上向上",
-      reality: ["フォロワー数追求", "投稿で疲弊", "売上貢献不明"],
-      summary: "バズったけど売れない",
+      icon: Coins,
+      number: "05",
+      title: "補助金が目的",
+      means: "補助金で設備投資",
+      purpose: "競争力強化・収益改善",
+      reality: ["補助金ありき計画", "活用が曖昧", "維持コストだけ残る"],
+      summary: "もらったけど活かせない",
     },
     {
-      icon: FileText,
-      number: "03",
-      title: "会議が目的",
-      means: "定例会議・報告資料",
-      purpose: "意思決定・課題解決",
-      reality: ["資料作成に忙殺", "何も決まらない", "行動が変わらない"],
-      summary: "会議は多いが進まない",
+      icon: BarChart,
+      number: "06",
+      title: "データ収集が目的",
+      means: "数値を集める・レポート作成",
+      purpose: "意思決定を速く・正しくする",
+      reality: ["見るだけで終わる", "作成に時間", "判断につながらない"],
+      summary: "測って満足している状態",
     },
   ];
 
   return (
     <section className="h-screen bg-[#f3f4f6] flex flex-col px-12 pt-12 pb-24 overflow-hidden relative">
-      
-      {/* 最前面のウォーターマーク (z-50) */}
+
+      {/* 最前面ウォーターマーク */}
       <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none select-none overflow-hidden z-50">
-        <div className="text-[18rem] font-black text-red-600/10 transform -rotate-12 leading-none whitespace-nowrap tracking-tighter">
+        <div className="text-[18rem] font-black text-red-600/10 transform rotate-18 leading-none whitespace-nowrap tracking-tighter">
           失敗事例
         </div>
       </div>
@@ -74,20 +74,25 @@ export function AvoidMeansExamplesPage1() {
 
               {/* Content */}
               <div className="space-y-6 flex-1">
+                {/* 手段 → 目的 */}
                 <div className="space-y-3">
                   <div className="relative">
-                    <span className="text-xs font-black bg-gray-500 text-white px-2 py-0.5 rounded absolute -top-2 left-3">手段</span>
+                    <span className="text-xs font-black bg-gray-500 text-white px-2 py-0.5 rounded absolute -top-2 left-3">
+                      手段
+                    </span>
                     <p className="text-2xl font-black bg-gray-100 rounded-2xl px-5 py-4 border-2 border-gray-200">
                       {example.means}
                     </p>
                   </div>
-                  
+
                   <div className="flex justify-center py-1">
                     <ArrowRight className="w-6 h-6 text-gray-400 rotate-90" />
                   </div>
 
                   <div className="relative">
-                    <span className="text-xs font-black bg-[#FCCE00] text-black px-2 py-0.5 rounded absolute -top-2 left-3">本来の目的</span>
+                    <span className="text-xs font-black bg-[#FCCE00] text-black px-2 py-0.5 rounded absolute -top-2 left-3">
+                      本来の目的
+                    </span>
                     <p className="text-2xl font-black bg-[#FCCE00]/20 rounded-2xl px-5 py-4 border-2 border-[#FCCE00]">
                       {example.purpose}
                     </p>
@@ -96,10 +101,12 @@ export function AvoidMeansExamplesPage1() {
 
                 <hr className="border-t-2 border-dashed border-gray-300" />
 
+                {/* 実際の結果 */}
                 <div className="space-y-3">
                   <p className="text-lg font-black text-red-600 flex items-center gap-2">
                     <XCircle className="w-5 h-5" /> 実際の結果
                   </p>
+
                   <ul className="space-y-2 text-xl font-bold text-gray-800">
                     {example.reality.map((item, i) => (
                       <li key={i} className="flex items-start gap-2">
@@ -123,7 +130,7 @@ export function AvoidMeansExamplesPage1() {
       </div>
 
       {/* Presentation Space */}
-      <div className="h-16 w-full" /> 
+      <div className="h-16 w-full" />
     </section>
   );
 }

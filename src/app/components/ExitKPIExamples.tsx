@@ -26,10 +26,9 @@ export function ExitKPIExamples() {
   ];
 
   const benefits = [
-    '「失敗してもいい」前提で動ける',
     '小さく素早く試せる',
     '早期に軌道修正ができる',
-    '次のチャレンジへ即座に移行',
+    '上手に失敗できる',
   ];
 
   return (
@@ -41,10 +40,10 @@ export function ExitKPIExamples() {
         {/* Header */}
         <div className="pt-4 pb-6">
           <div className="flex items-center gap-3 mb-3">
-            <div className="w-6 h-0.5 bg-[#FCCE00]"></div>
-            <span className="text-base font-bold text-[#FCCE00] uppercase tracking-wider">
+            {/* <div className="w-6 h-0.5 bg-[#FCCE00]"></div> */}
+            {/* <span className="text-base font-bold text-[#FCCE00] uppercase tracking-wider">
               KPI STRATEGY
-            </span>
+            </span> */}
           </div>
           <h1 className="text-5xl font-black text-black">
             撤退KPIの具体例と効果
@@ -55,9 +54,9 @@ export function ExitKPIExamples() {
         <div className="flex gap-10 flex-1 items-center">
           {/* Left Column: KPI Examples */}
           <div className="flex-1 flex flex-col gap-5">
-            <div className="text-2xl font-bold text-gray-600 mb-2 border-l-4 border-gray-300 pl-4">
+            {/* <div className="text-2xl font-bold text-gray-600 mb-2 border-l-4 border-gray-300 pl-4">
               具体的な撤退ラインの例
-            </div>
+            </div> */}
 
             {kpiExamples.map((kpi, index) => {
               const Icon = kpi.icon;
@@ -97,7 +96,7 @@ export function ExitKPIExamples() {
           {/* Right Column: Benefits */}
           <div className="flex-none w-[420px] bg-[#e1e1e1]/20 rounded-2xl p-7 border-2 border-dashed border-gray-300">
             <div className="text-2xl font-bold text-[#FCCE00] mb-6 border-l-4 border-[#FCCE00] pl-4">
-              撤退ラインを決めるメリット
+              撤退KPIを決めるメリット
             </div>
 
             <div className="space-y-4">
@@ -124,19 +123,17 @@ export function ExitKPIExamples() {
           <div className="absolute right-0 bottom-0 h-full w-80 bg-gradient-to-l from-[#FCCE00]/10 to-transparent"></div>
 
           <div className="relative z-10">
-            <p className="text-3xl font-black text-white leading-tight mb-1">
+           <p className="text-3xl font-black text-[#FCCE00] leading-tight">
               情熱は始める力。
-            </p>
-            <p className="text-3xl font-black text-[#FCCE00] leading-tight">
-              KPIはやめる勇気。
+          
+              撤退KPIはやめる勇気。
             </p>
           </div>
 
           <div className="relative z-10 text-right border-l-2 border-gray-600 pl-8">
-            <p className="text-sm text-gray-400 mb-2">Digital Strategy Principle</p>
+            {/* <p className="text-sm text-gray-400 mb-2">Digital Strategy Principle</p> */}
             <h4 className="text-xl font-bold text-white leading-tight">
-              成功より先に、<br />
-              失敗の終わらせ方を決める
+              成功より先に失敗の終わらせ方を決める
             </h4>
           </div>
         </div>

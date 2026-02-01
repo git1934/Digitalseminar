@@ -16,10 +16,10 @@ export function ExitKPIContent() {
           {/* Header Section */}
           <div className="mb-10 pb-6 border-b-2 border-[#e1e1e1]">
             <div className="flex items-center gap-2 mb-3">
-              <div className="w-1 h-6 bg-[#FCCE00]"></div>
-              <span className="text-base font-bold text-gray-500 uppercase tracking-wider">
+              {/* <div className="w-1 h-6 bg-[#FCCE00]"></div> */}
+              {/* <span className="text-base font-bold text-gray-500 uppercase tracking-wider">
                 Chapter 02
-              </span>
+              </span> */}
             </div>
             <h1 className="text-6xl font-black text-black mb-4 leading-tight">
               やめ方を決めれば、もっと挑戦できる

@@ -16,18 +16,18 @@ export function AvoidMeansContent() {
           {/* Header Section */}
           <div className="mb-10 pb-6 border-b-2 border-[#e1e1e1]">
             <div className="flex items-center gap-2 mb-3">
-              <div className="w-1 h-6 bg-[#FCCE00]"></div>
-              <span className="text-base font-bold text-gray-500 uppercase tracking-wider">
+              {/* <div className="w-1 h-6 bg-[#FCCE00]"></div> */}
+              {/* <span className="text-base font-bold text-gray-500 uppercase tracking-wider">
                 Chapter 03
-              </span>
+              </span> */}
             </div>
             <h1 className="text-6xl font-black text-black mb-4 leading-tight">
-              手段の目的化を防ぐ
+              デジタルは導入がゴールではない
             </h1>
-            <p className="text-3xl font-bold text-[#FCCE00] flex items-center gap-3">
+            {/* <p className="text-3xl font-bold text-[#FCCE00] flex items-center gap-3">
               <span className="w-10 h-0.5 bg-[#FCCE00]"></span>
               デジタルは導入がゴールではない
-            </p>
+            </p> */}
           </div>
 
           {/* Narrative Content */}
@@ -66,9 +66,9 @@ export function AvoidMeansContent() {
                 <h3 className="text-2xl font-bold text-black mb-3">
                   なぜ起こるのか？
                 </h3>
-                <p className="text-2xl text-gray-700 mb-3 leading-relaxed">
+                {/* <p className="text-2xl text-gray-700 mb-3 leading-relaxed">
                   多くのケースで、以下の2点が曖昧なままプロジェクトが進行しています。
-                </p>
+                </p> */}
                 <ul className="space-y-2">
                   <li className="text-2xl text-gray-700 pl-6 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400 before:font-bold">
                     <strong className="text-black font-bold bg-[#FCCE00]/20 px-1">「何を良くしたいか」</strong>が曖昧なまま始めている
@@ -88,7 +88,6 @@ export function AvoidMeansContent() {
               <div className="flex-1">
                 {/* <h3 className="text-3xl font-bold text-white mb-3">迷子にならないために</h3> */}
                 <p className="text-2xl text-gray-300 leading-relaxed">
-                  ツールを選ぶ前に、まず<strong className="text-[#FCCE00] font-bold">「目的の言語化」</strong>が必要です。
                   デジタルは魔法の杖ではなく、目的を達成するための道具にすぎません。
                 </p>
               </div>

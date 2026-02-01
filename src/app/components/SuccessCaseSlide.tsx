@@ -46,7 +46,7 @@ export function SuccessCaseSlide() {
           -translate-x-1/2 -translate-y-1/2
           text-[180px] md:text-[230px]
           font-black
-          text-white/28
+          text-[#0072BC]/45
           tracking-wider
           select-none
           whitespace-nowrap

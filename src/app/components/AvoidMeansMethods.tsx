@@ -36,9 +36,9 @@ export function AvoidMeansMethods() {
       <div className="max-w-7xl mx-auto w-full h-full relative z-10 flex flex-col">
         {/* Header */}
         <div className="pt-4 pb-6 border-b-2 border-gray-100">
-          <div className="inline-block bg-[#FCCE00]/10 text-[#FCCE00] text-base font-bold uppercase tracking-wider px-4 py-2 rounded mb-3">
+          {/* <div className="inline-block bg-[#FCCE00]/10 text-[#FCCE00] text-base font-bold uppercase tracking-wider px-4 py-2 rounded mb-3">
             METHODOLOGY
-          </div>
+          </div> */}
           <h1 className="text-5xl font-black text-black">
             手段の目的化を防ぐ方法
           </h1>

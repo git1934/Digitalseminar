@@ -26,7 +26,8 @@ import { Chart5 } from "./components/Chart5";
 import { Chart6 } from "./components/Chart6";
 import { Chapter3Description } from "./components/Chapter3Description";
 import { AvoidMeansContent } from "./components/AvoidMeansContent";
-import { AvoidMeansExamples } from "./components/AvoidMeansExamples";
+import { AvoidMeansExamplesPage1 } from "./components/AvoidMeansExamples";
+import { AvoidMeansExamplesPage2 } from "./components/AvoidMeansExamplesPage2";
 import { AvoidMeansMethods } from "./components/AvoidMeansMethods";
 import { FinalSummary } from "./components/FinalSummary";
 import { KeyMessage } from "./components/KeyMessage";
@@ -69,7 +70,8 @@ export default function App() {
     { component: <Chart6 />, title: 'Chart 6' },
     { component: <Chapter3Description />, title: 'Chapter 3 Description' },
     { component: <AvoidMeansContent />, title: 'Avoid Means Content' },
-    { component: <AvoidMeansExamples />, title: 'Avoid Means Examples' },
+    { component: <AvoidMeansExamplesPage1 />, title: 'Avoid Means Examples1' },
+    { component: <AvoidMeansExamplesPage2 />, title: 'Avoid Means Examples2' },
     { component: <AvoidMeansMethods />, title: 'Avoid Means Methods' },
     { component: <FinalSummary />, title: 'Final Summary' },
     { component: <KeyMessage />, title: 'Key Message' },
