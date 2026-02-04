@@ -10,7 +10,7 @@ export function SuccessCaseSlide() {
           -translate-x-1/2 -translate-y-1/2
           text-[170px] md:text-[200px]
           font-black
-          text-[#FCCE00]/35
+          text-[#FCCE00]/75
           tracking-widest
           select-none
           whitespace-nowrap
@@ -28,7 +28,7 @@ export function SuccessCaseSlide() {
           -translate-x-1/2 -translate-y-1/2
           text-[160px] md:text-[210px]
           font-black
-          text-white/58
+          text-white/68
           tracking-widest
           select-none
           whitespace-nowrap
@@ -46,7 +46,7 @@ export function SuccessCaseSlide() {
           -translate-x-1/2 -translate-y-1/2
           text-[180px] md:text-[230px]
           font-black
-          text-[#0072BC]/45
+          text-[#0072BC]/85
           tracking-wider
           select-none
           whitespace-nowrap

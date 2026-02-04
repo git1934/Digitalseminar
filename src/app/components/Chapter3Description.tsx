@@ -39,8 +39,8 @@ export function Chapter3Description() {
         <h1
           className="
             text-[110px]
-            md:text-[150px]
-            lg:text-[180px]
+            md:text-[120px]
+            lg:text-[150px]
             font-black
             text-black
             leading-none

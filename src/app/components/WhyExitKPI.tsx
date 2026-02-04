@@ -10,11 +10,8 @@ export function WhyExitKPI() {
             Chapter 02 - Deep Dive
           </div> */}
           <h1 className="text-7xl font-black text-black mb-4 leading-tight tracking-tight">
-            撤退KPIが重要な理由
+            撤退判断にはデータ活用が必要
           </h1>
-          <p className="text-2xl text-gray-800 font-medium leading-snug max-w-5xl mx-auto">
-            データ活用は、前に進むためだけではなく、<strong className="text-black bg-[#FCCE00] px-2 py-1 rounded">撤退判断にこそ必要</strong>です
-          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 flex-1 min-h-0">
@@ -71,7 +68,7 @@ export function WhyExitKPI() {
             </div>
 
             <p className="text-xl text-gray-700 mb-4 leading-snug">
-              ここで重要なのが、<strong className="text-[#FCCE00] font-bold">撤退KPI</strong>です。<br />
+              撤退KPIとは
               「この数値に届かなければやめる」と事前に決める指標です。
             </p>
 

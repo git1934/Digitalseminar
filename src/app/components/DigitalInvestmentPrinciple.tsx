@@ -77,11 +77,11 @@ export function DigitalInvestmentPrinciple() {
             </div>
 
             {/* 補足ブロック */}
-            <div className="bg-black rounded-xl p-4">
+            {/* <div className="bg-black rounded-xl p-4">
               <p className="text-[#FCCE00] font-bold text-lg leading-snug text-center">
                 失敗を恐れず、素早く学習するサイクルを確立
               </p>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Column: 利大 (Profit Maximization) */}
@@ -145,11 +145,11 @@ export function DigitalInvestmentPrinciple() {
             </div>
 
             {/* 補足ブロック */}
-            <div className="bg-[#FCCE00] rounded-xl p-4">
+            {/* <div className="bg-[#FCCE00] rounded-xl p-4">
               <p className="text-black font-bold text-lg leading-snug text-center">
                 継続的な改善と成長を前提に投資する
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
