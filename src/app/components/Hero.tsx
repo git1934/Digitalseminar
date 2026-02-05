@@ -76,7 +76,7 @@ export function Hero() {
       <motion.div
         className="
           absolute -bottom-76 -left-48
-          w-[640px] h-[600px]
+          w-[640px] h-[640px]
           rounded-full
           border-[1px] border-[#FCCE00]
           opacity-32

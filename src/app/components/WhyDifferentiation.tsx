@@ -41,8 +41,8 @@ export function WhyDifferentiation() {
             >
               <div className="flex items-center gap-6">
                 {/* Number Badge */}
-                <div className="flex-shrink-0 w-16 h-16 bg-[#FCCE00] text-black rounded-full flex items-center justify-center">
-                  <span className="text-2xl font-black">{reason.number}</span>
+                <div className="flex-shrink-0 w-20 h-20 bg-[#FCCE00] text-black rounded-full flex items-center justify-center">
+                  <span className="text-4xl font-black">{reason.number}</span>
                 </div>
 
                 {/* Content */}

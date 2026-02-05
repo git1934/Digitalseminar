@@ -10,11 +10,12 @@ import { Chart1 } from "./components/Chart1";
 import { Chart2 } from "./components/Chart2";
 import { Chapter1Description } from "./components/Chapter1Description";
 import { WhyDifferentiation } from "./components/WhyDifferentiation";
+import { DifferentiationIntroSlide } from "./components/DifferentiationIntroSlide";
 import { DifferentiationContent } from "./components/DifferentiationContent";
-import { DifferentiationPoints } from "./components/DifferentiationPoints";
+import { StrategyComparison } from "./components/StrategyComparison";
 import { Chapter2 } from "./components/Chapter2";
+import { DataIdeaSlide } from "./components/DataIdeaSlide";
 import { Chart3 } from "./components/Chart3";
-import { Chart4 } from "./components/Chart4";
 import { Chapter2Description } from "./components/Chapter2Description";
 import { WhyExitKPI } from "./components/WhyExitKPI";
 import { ExitKPIContent } from "./components/ExitKPIContent";
@@ -35,6 +36,7 @@ import { ThankYou } from "./components/ThankYou";
 import { DramaticPause } from "./components/DramaticPause";
 import { SimpleAnswerSlide } from "./components/SimpleAnswerSlide";
 import { SuccessCaseSlide } from "./components/SuccessCaseSlide";
+import { ReallySlide } from "./components/ReallySlide";
 
 export default function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -54,11 +56,13 @@ export default function App() {
     { component: <DramaticPause />, title: 'Dramatic Pause' },
     { component: <SimpleAnswerSlide />, title: 'Simple Answer Slide' },
     { component: <SuccessCaseSlide />, title: 'Success Case Slide' },
+    { component: <ReallySlide />, title: 'Really Slide' },
+    { component: <DifferentiationIntroSlide />, title: 'Differentiation Intro Slide' },
+    { component: <StrategyComparison />, title: 'Strategy Comparison' },
     { component: <DifferentiationContent />, title: 'Differentiation Content' },
-    { component: <DifferentiationPoints />, title: 'Differentiation Points' },
+    { component: <DataIdeaSlide />, title: 'Data Idea Slide' },
     { component: <Chapter2 />, title: 'Chapter 2' },
     { component: <Chart3 />, title: 'Chart 3' },
-    { component: <Chart4 />, title: 'Chart 4' },
     { component: <Chapter2Description />, title: 'Chapter 2 Description' },
     { component: <WhyExitKPI />, title: 'Why Exit KPI' },
     { component: <ExitKPIContent />, title: 'Exit KPI Content' },

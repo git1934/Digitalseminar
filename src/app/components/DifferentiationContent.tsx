@@ -39,7 +39,7 @@ export function DifferentiationContent() {
               </div>
               <div className="flex-1">
                 <p className="text-2xl leading-relaxed text-gray-700">
-                  生成AIやAIエージェントの登場により、デジタル活用のハードルは一気に下がりました。<br/>
+                  DXツールや生成AIの登場により、デジタル活用のハードルは一気に下がりました。<br/>
                   今では、高機能なツールを誰でも同じような価格で使える時代です。
                 </p>
               </div>
@@ -59,21 +59,21 @@ export function DifferentiationContent() {
             </div>
 
             {/* Section 3: Warning */}
-            <div className="bg-[#FCCE00]/10 border-l-4 border-[#FCCE00] rounded-r-xl p-6">
+            <div className="bg-black border-l-4 border-[#FCCE00] rounded-r-xl p-6">
               <div className="flex gap-5 items-start">
                 <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-[#FCCE00]/20 flex items-center justify-center">
                   <AlertTriangle className="w-6 h-6 text-[#FCCE00]" />
                 </div>
                 <div className="flex-1">
-                  <p className="text-2xl text-gray-800 font-medium leading-relaxed">
-                    この結果、多くの企業が<strong className="text-black font-bold">他社と同じような取り組み</strong>に陥っています。
+                  <p className="text-2xl text-white font-medium leading-relaxed">
+                    この結果、多くの企業が他社と同じような取り組みに陥っています。
                   </p>
                 </div>
               </div>
             </div>
 
             {/* Section 4: Conclusion */}
-            <div className="bg-black rounded-xl p-8 flex items-center gap-8 shadow-2xl">
+            {/* <div className="bg-black rounded-xl p-8 flex items-center gap-8 shadow-2xl">
               <div className="flex-shrink-0">
                 <Crown className="w-14 h-14 text-[#FCCE00]" />
               </div>
@@ -84,7 +84,7 @@ export function DifferentiationContent() {
                   <strong className="text-[#FCCE00] font-bold">経営視点での差別化</strong>こそが、競争優位を生み出します。
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
