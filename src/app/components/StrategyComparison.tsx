@@ -37,12 +37,13 @@ export function StrategyComparison() {
         {/* Table */}
         <div className="rounded-3xl border border-gray-200 overflow-hidden">
           {/* Header */}
-          <div className="grid grid-cols-[220px_1fr_1fr] bg-gray-100">
-            <div className="p-6"></div>
-            <div className="p-6 text-3xl font-black text-blue-600">
+<div className="grid grid-cols-[220px_1fr_1fr]">
+  <div className="p-6 bg-white"></div>
+
+  <div className="p-6 text-3xl font-black text-blue-700 bg-blue-50">
               集中戦略（DX・AIが有用）
             </div>
-            <div className="p-6 text-3xl font-black text-[#FCCE00]">
+       <div className="p-6 text-3xl font-black text-[#B88900] bg-[#FCCE00]/20">
               差別化戦略（アイデアが価値）
             </div>
           </div>
@@ -58,29 +59,34 @@ export function StrategyComparison() {
                 className="grid grid-cols-[220px_1fr_1fr] border-t border-gray-200"
               >
                 {/* Label */}
-                <div className="p-8 bg-gray-50 flex items-center text-2xl font-bold text-gray-600">
-                  {row.label}
-                </div>
+          {/* Label */}
+<div className="p-8 bg-gray-900 flex items-center">
+  <span className="text-2xl font-black text-white/90 tracking-wide">
+    {row.label}
+  </span>
+</div>
 
-                {/* Focus Strategy */}
-                <div className="p-10 flex gap-6 items-center">
-                  <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center flex-shrink-0">
-                    <FocusIcon className="w-8 h-8 text-blue-600" />
-                  </div>
-                  <h3 className="text-3xl font-black">
-                    {row.focusTitle}
-                  </h3>
-                </div>
+               {/* Focus Strategy */}
+<div className="p-10 flex gap-6 items-center bg-blue-50">
+  <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+    <FocusIcon className="w-8 h-8 text-white" />
+  </div>
+  <h3 className="text-3xl font-black text-blue-900">
+    {row.focusTitle}
+  </h3>
+</div>
 
-                {/* Differentiation Strategy */}
-                <div className="p-10 flex gap-6 items-center bg-[#FCCE00]/5">
-                  <div className="w-16 h-16 bg-[#FCCE00]/20 rounded-2xl flex items-center justify-center flex-shrink-0">
-                    <DiffIcon className="w-8 h-8 text-[#FCCE00]" />
-                  </div>
-                  <h3 className="text-3xl font-black">
-                    {row.diffTitle}
-                  </h3>
-                </div>
+
+           {/* Differentiation Strategy */}
+<div className="p-10 flex gap-6 items-center bg-[#FCCE00]/15">
+  <div className="w-16 h-16 bg-[#FCCE00] rounded-2xl flex items-center justify-center flex-shrink-0">
+    <DiffIcon className="w-8 h-8 text-black" />
+  </div>
+  <h3 className="text-3xl font-black text-[#B88900]">
+    {row.diffTitle}
+  </h3>
+</div>
+
               </div>
             );
           })}

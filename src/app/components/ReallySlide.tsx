@@ -68,7 +68,7 @@ export function ReallySlide() {
 
       {/* メインテキスト */}
       <h1 className="relative z-10 text-white font-black text-[10rem] md:text-[12rem] tracking-tight">
-        本当なのか？
+        これって本当？
       </h1>
     </section>
   );

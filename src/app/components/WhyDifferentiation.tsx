@@ -58,13 +58,8 @@ export function WhyDifferentiation() {
             </div>
           ))}
         </div>
-
-        {/* Footer Message */}
-        {/* <div className="mt-8 text-center">
-          <p className="text-3xl font-black text-black">
-            差別化なき企業に、<span className="text-[#FCCE00] bg-black px-3 py-1 rounded">未来はない</span>
-          </p>
-        </div> */}
+<div className="h-12" />
+        
       </div>
     </section>
   );

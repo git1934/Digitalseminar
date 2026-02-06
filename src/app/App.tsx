@@ -37,6 +37,7 @@ import { DramaticPause } from "./components/DramaticPause";
 import { SimpleAnswerSlide } from "./components/SimpleAnswerSlide";
 import { SuccessCaseSlide } from "./components/SuccessCaseSlide";
 import { ReallySlide } from "./components/ReallySlide";
+import { ConclusionPrelude } from "./components/ConclusionPrelude";
 
 export default function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -60,6 +61,7 @@ export default function App() {
     { component: <DifferentiationIntroSlide />, title: 'Differentiation Intro Slide' },
     { component: <StrategyComparison />, title: 'Strategy Comparison' },
     { component: <DifferentiationContent />, title: 'Differentiation Content' },
+    { component: <ConclusionPrelude />, title: 'Conclusion Prelude' },
     { component: <DataIdeaSlide />, title: 'Data Idea Slide' },
     { component: <Chapter2 />, title: 'Chapter 2' },
     { component: <Chart3 />, title: 'Chart 3' },
