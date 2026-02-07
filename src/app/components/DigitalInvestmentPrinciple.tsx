@@ -7,10 +7,8 @@ export function DigitalInvestmentPrinciple() {
         {/* Header */}
         <div className="text-center">
           <h1 className="text-6xl font-black text-black mb-2 leading-tight tracking-tight">
-            デジタルは経営投資。原則は
-            <span className="text-black bg-[#FCCE00] px-4 py-1 rounded-xl ml-3">
-              損小利大
-            </span>
+            デジタル戦略の原則は損小利大
+         
           </h1>
         </div>
 
@@ -109,7 +107,7 @@ export function DigitalInvestmentPrinciple() {
                       データ・AI活用
                     </p>
                     <p className="text-base text-gray-700 leading-snug">
-                      データやAIを活用し、業務効率化だけでなく、新しい顧客体���や商品、サービスを提供して売上を最大化する。
+                      データやAIを活用し、業務効率化だけでなく、新しい顧客体験や商品、サービスを提供して売上を最大化する。
                     </p>
                   </div>
                 </div>

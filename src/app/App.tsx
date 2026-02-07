@@ -16,28 +16,32 @@ import { StrategyComparison } from "./components/StrategyComparison";
 import { Chapter2 } from "./components/Chapter2";
 import { DataIdeaSlide } from "./components/DataIdeaSlide";
 import { Chart3 } from "./components/Chart3";
+import { Chart4 } from "./components/Chart4";
 import { Chapter2Description } from "./components/Chapter2Description";
 import { WhyExitKPI } from "./components/WhyExitKPI";
 import { ExitKPIContent } from "./components/ExitKPIContent";
 import { ExitKPIExamples } from "./components/ExitKPIExamples";
 import { ExitIsLossCutting } from "./components/ExitIsLossCutting";
 import { DigitalInvestmentPrinciple } from "./components/DigitalInvestmentPrinciple";
+import { DigitalStrengthSlide } from "./components/DigitalStrengthSlide";
+import { ThreeStrengthsSlide } from "./components/ThreeStrengthsSlide";
+import { InvisibleReasonSlide } from "./components/InvisibleReasonSlide";
 import { Chapter3 } from "./components/Chapter3";
 import { Chart5 } from "./components/Chart5";
 import { Chart6 } from "./components/Chart6";
 import { Chapter3Description } from "./components/Chapter3Description";
-import { AvoidMeansContent } from "./components/AvoidMeansContent";
-import { AvoidMeansExamplesPage1 } from "./components/AvoidMeansExamples";
-import { AvoidMeansExamplesPage2 } from "./components/AvoidMeansExamplesPage2";
-import { AvoidMeansMethods } from "./components/AvoidMeansMethods";
+import { WhyToolBecomesGoalSlide } from "./components/WhyToolBecomesGoalSlide";
 import { FinalSummary } from "./components/FinalSummary";
+import { WisdomBattleSlide } from "./components/WisdomBattleSlide";
 import { KeyMessage } from "./components/KeyMessage";
+import { ConclusionPreludeExpand } from "./components/ConclusionPreludeExpand";
 import { ThankYou } from "./components/ThankYou";
 import { DramaticPause } from "./components/DramaticPause";
 import { SimpleAnswerSlide } from "./components/SimpleAnswerSlide";
 import { SuccessCaseSlide } from "./components/SuccessCaseSlide";
 import { ReallySlide } from "./components/ReallySlide";
-import { ConclusionPrelude } from "./components/ConclusionPrelude";
+import { CostEffectivenessSlide } from "./components/CostEffectivenessSlide";
+import { DiverseChangeSlide } from "./components/DiverseChangeSlide";
 
 export default function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -61,13 +65,14 @@ export default function App() {
     { component: <DifferentiationIntroSlide />, title: 'Differentiation Intro Slide' },
     { component: <StrategyComparison />, title: 'Strategy Comparison' },
     { component: <DifferentiationContent />, title: 'Differentiation Content' },
-    { component: <ConclusionPrelude />, title: 'Conclusion Prelude' },
+    { component: <ConclusionPreludeExpand />, title: 'Conclusion Prelude Expand' },
     { component: <DataIdeaSlide />, title: 'Data Idea Slide' },
     { component: <Chapter2 />, title: 'Chapter 2' },
     { component: <Chart3 />, title: 'Chart 3' },
+    { component: <Chart4 />, title: 'Chart 4' },
     { component: <Chapter2Description />, title: 'Chapter 2 Description' },
-    { component: <WhyExitKPI />, title: 'Why Exit KPI' },
     { component: <ExitKPIContent />, title: 'Exit KPI Content' },
+    { component: <WhyExitKPI />, title: 'Why Exit KPI' },
     { component: <ExitKPIExamples />, title: 'Exit KPI Examples' },
     { component: <ExitIsLossCutting />, title: 'Exit Is Loss Cutting' },
     { component: <DigitalInvestmentPrinciple />, title: 'Digital Investment Principle' },
@@ -75,11 +80,15 @@ export default function App() {
     { component: <Chart5 />, title: 'Chart 5' },
     { component: <Chart6 />, title: 'Chart 6' },
     { component: <Chapter3Description />, title: 'Chapter 3 Description' },
-    { component: <AvoidMeansContent />, title: 'Avoid Means Content' },
-    { component: <AvoidMeansExamplesPage1 />, title: 'Avoid Means Examples1' },
-    { component: <AvoidMeansExamplesPage2 />, title: 'Avoid Means Examples2' },
-    { component: <AvoidMeansMethods />, title: 'Avoid Means Methods' },
+    { component: <WhyToolBecomesGoalSlide />, title: 'Why Tool Becomes Goal Slide' },
+    { component: <InvisibleReasonSlide />, title: 'Invisible Reason Slide' },
+    { component: <CostEffectivenessSlide />, title: 'Cost Effectiveness Slide' },
+    { component: <DiverseChangeSlide />, title: 'Diverse Change Slide' },
+    { component: <DigitalStrengthSlide />, title: 'Digital Strength Slide' },
+    { component: <ThreeStrengthsSlide />, title: 'Three Strengths Slide' },
     { component: <FinalSummary />, title: 'Final Summary' },
+    { component: <WisdomBattleSlide />, title: 'Wisdom Battle Slide' },
+    { component: <ConclusionPreludeExpand />, title: 'Conclusion Prelude Expand' },
     { component: <KeyMessage />, title: 'Key Message' },
     { component: <ThankYou />, title: 'Thank You' },
   ];
@@ -148,7 +157,7 @@ export default function App() {
       className="h-screen w-screen overflow-hidden bg-white cursor-pointer relative"
       onClick={handleClick}
     >
-      {/* 現在のスライドを表示 */}
+      {/* 在のスライドを表示 */}
       <div className="h-full w-full">
         {slides[currentSlide].component}
       </div>
@@ -167,7 +176,7 @@ export default function App() {
         </button>
       )}
 
-      {/* ナビゲーションボタン（右） */}
+      {/* ナビゲーョンボタン（右） */}
       {currentSlide < totalSlides - 1 && (
         <button
           onClick={(e) => {

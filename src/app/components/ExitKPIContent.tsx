@@ -39,8 +39,8 @@ export function ExitKPIContent() {
               </div>
               <div className="flex-1">
                 <p className="text-2xl leading-relaxed text-gray-700">
-                  環境は複雑になり続け、変化は止まりません。
-                  しかし、多くの経営者が<strong className="text-black font-bold bg-[#FCCE00]/20 px-1">「失敗したらどうしよう」「止められなくなるのでは」</strong>という不安を感じています。
+                 これからの環境はますます複雑化し、ビジネスの変化は止まることがありません。
+                  そうした変化に対応するためには、デジタルの活用が欠かせません。
                 </p>
               </div>
             </div>
@@ -53,8 +53,8 @@ export function ExitKPIContent() {
                 </div>
                 <div className="flex-1">
                   <p className="text-2xl text-gray-800 font-medium leading-relaxed">
-                    ITプロジェクトの成功には「担当者の情熱」が不可欠です。
-                    しかし皮肉なことに、<strong className="text-black font-bold">その情熱こそが、撤退を難しくする原因</strong>にもなります。
+                 ITプロジェクトを成功させるには、担当者の情熱が不可欠です。
+                   しかし皮肉なことに、その情熱こそが、撤退の判断を難しくしてしまう要因にもなります。
                   </p>
                 </div>
               </div>
@@ -66,10 +66,10 @@ export function ExitKPIContent() {
                 <Ruler className="w-14 h-14 text-[#FCCE00]" />
               </div>
               <div className="flex-1">
-                <h3 className="text-3xl font-bold text-white mb-3">定量的な「止めるライン」を決める</h3>
+                <h3 className="text-3xl font-bold text-white mb-3">定量的な止めるラインを決める</h3>
                 <p className="text-2xl text-gray-300 leading-relaxed">
-                  情熱に頼らず判断するために、
-                  <strong className="text-[#FCCE00] font-bold">数値で表現された撤退KPI</strong>があらかじめ必要なのです。
+                  客観的に判断するために、
+                  <strong className="text-[#FCCE00] font-bold">数値で表現された撤退KPI</strong>があらかじめ必要
                 </p>
               </div>
             </div>
