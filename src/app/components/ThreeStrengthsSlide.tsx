@@ -116,11 +116,11 @@ export function ThreeStrengthsSlide() {
       <h1
         className="
           absolute
-          top-[72%] left-[38%]
+          top-[72%] left-[78%]
           -translate-x-1/2 -translate-y-1/2
           text-[170px] md:text-[210px]
           font-black
-          text-[#FCCE00]/65
+          text-[#0072BC]/85
           tracking-wider
           select-none
           whitespace-nowrap

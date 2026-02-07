@@ -42,6 +42,11 @@ import { SuccessCaseSlide } from "./components/SuccessCaseSlide";
 import { ReallySlide } from "./components/ReallySlide";
 import { CostEffectivenessSlide } from "./components/CostEffectivenessSlide";
 import { DiverseChangeSlide } from "./components/DiverseChangeSlide";
+import { NewspaperSlide } from "./components/NewspaperSlide";
+import { ExperientialSeminarSlide } from "./components/ExperientialSeminarSlide";
+import { UserPsychologySlide } from "./components/UserPsychologySlide";
+import { DigitalCannotStopSlide } from "./components/DigitalCannotStopSlide";
+import { BalanceSenseSlide } from "./components/BalanceSenseSlide";
 
 export default function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -50,8 +55,10 @@ export default function App() {
   const slides = [
     { component: <Hero />, title: 'Hero' },
     { component: <Introduction />, title: 'Introduction' },
-    { component: <Survey />, title: 'Survey' },
+    { component: <NewspaperSlide />, title: 'Newspaper' },
     { component: <POSExpertise />, title: 'POS Expertise' },
+    { component: <ExperientialSeminarSlide />, title: 'Experiential Seminar' },
+    { component: <Survey />, title: 'Survey' },
     { component: <ThreePoints />, title: 'Three Points' },
     { component: <Chapter1 />, title: 'Chapter 1' },
     { component: <Chart1 />, title: 'Chart 1' },
@@ -70,15 +77,6 @@ export default function App() {
     { component: <Chapter2 />, title: 'Chapter 2' },
     { component: <Chart3 />, title: 'Chart 3' },
     { component: <Chart4 />, title: 'Chart 4' },
-    { component: <Chapter2Description />, title: 'Chapter 2 Description' },
-    { component: <ExitKPIContent />, title: 'Exit KPI Content' },
-    { component: <WhyExitKPI />, title: 'Why Exit KPI' },
-    { component: <ExitKPIExamples />, title: 'Exit KPI Examples' },
-    { component: <ExitIsLossCutting />, title: 'Exit Is Loss Cutting' },
-    { component: <DigitalInvestmentPrinciple />, title: 'Digital Investment Principle' },
-    { component: <Chapter3 />, title: 'Chapter 3' },
-    { component: <Chart5 />, title: 'Chart 5' },
-    { component: <Chart6 />, title: 'Chart 6' },
     { component: <Chapter3Description />, title: 'Chapter 3 Description' },
     { component: <WhyToolBecomesGoalSlide />, title: 'Why Tool Becomes Goal Slide' },
     { component: <InvisibleReasonSlide />, title: 'Invisible Reason Slide' },
@@ -86,6 +84,18 @@ export default function App() {
     { component: <DiverseChangeSlide />, title: 'Diverse Change Slide' },
     { component: <DigitalStrengthSlide />, title: 'Digital Strength Slide' },
     { component: <ThreeStrengthsSlide />, title: 'Three Strengths Slide' },
+        { component: <Chapter3 />, title: 'Chapter 3' },
+    { component: <Chart5 />, title: 'Chart 5' },
+    { component: <Chart6 />, title: 'Chart 6' },
+    { component: <Chapter2Description />, title: 'Chapter 2 Description' },
+    { component: <DigitalCannotStopSlide />, title: 'Digital Cannot Stop' },
+    { component: <BalanceSenseSlide />, title: 'Balance Sense' },
+    { component: <ExitKPIContent />, title: 'Exit KPI Content' },
+    { component: <WhyExitKPI />, title: 'Why Exit KPI' },
+    { component: <ExitKPIExamples />, title: 'Exit KPI Examples' },
+    { component: <UserPsychologySlide />, title: 'User Psychology' },
+    { component: <ExitIsLossCutting />, title: 'Exit Is Loss Cutting' },
+    { component: <DigitalInvestmentPrinciple />, title: 'Digital Investment Principle' },
     { component: <FinalSummary />, title: 'Final Summary' },
     { component: <WisdomBattleSlide />, title: 'Wisdom Battle Slide' },
     { component: <ConclusionPreludeExpand />, title: 'Conclusion Prelude Expand' },
