@@ -78,7 +78,7 @@ export function WhyToolBecomesGoalSlide() {
 
       {/* メインテキスト */}
       <h1 className="relative z-10 text-white font-black text-[6rem] md:text-[7rem] lg:text-[8rem] tracking-tight text-center leading-tight px-8">
-        なぜデジタルツールは<br />
+        なぜデジタルは<br />
         <span className="text-[#FCCE00]">手段が目的化</span><br />
         しやすいのか
       </h1>

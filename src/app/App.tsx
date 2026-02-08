@@ -26,6 +26,7 @@ import { DigitalInvestmentPrinciple } from "./components/DigitalInvestmentPrinci
 import { DigitalStrengthSlide } from "./components/DigitalStrengthSlide";
 import { ThreeStrengthsSlide } from "./components/ThreeStrengthsSlide";
 import { InvisibleReasonSlide } from "./components/InvisibleReasonSlide";
+import { ClueSlide } from "./components/ClueSlide";
 import { Chapter3 } from "./components/Chapter3";
 import { Chart5 } from "./components/Chart5";
 import { Chart6 } from "./components/Chart6";
@@ -47,6 +48,14 @@ import { ExperientialSeminarSlide } from "./components/ExperientialSeminarSlide"
 import { UserPsychologySlide } from "./components/UserPsychologySlide";
 import { DigitalCannotStopSlide } from "./components/DigitalCannotStopSlide";
 import { BalanceSenseSlide } from "./components/BalanceSenseSlide";
+import { ComputerStrengthsSlide } from "./components/ComputerStrengthsSlide";
+import { ScaleOutSlide } from "./components/ScaleOutSlide";
+import { ScaleOutQuantificationSlide } from "./components/ScaleOutQuantificationSlide";
+import { ControlKPI } from "./components/ControlKPI";
+import { ChartImageSlide } from "./components/ChartImageSlide";
+import { BackToBasicsSlide } from "./components/BackToBasicsSlide";
+import { ConclusionPreludeWide2 } from "./components/ConclusionPreludeWide2";
+import { ClassificationSlide } from "./components/ClassificationSlide";
 
 export default function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -72,35 +81,43 @@ export default function App() {
     { component: <DifferentiationIntroSlide />, title: 'Differentiation Intro Slide' },
     { component: <StrategyComparison />, title: 'Strategy Comparison' },
     { component: <DifferentiationContent />, title: 'Differentiation Content' },
-    { component: <ConclusionPreludeExpand />, title: 'Conclusion Prelude Expand' },
     { component: <DataIdeaSlide />, title: 'Data Idea Slide' },
     { component: <Chapter2 />, title: 'Chapter 2' },
     { component: <Chart3 />, title: 'Chart 3' },
     { component: <Chart4 />, title: 'Chart 4' },
     { component: <Chapter3Description />, title: 'Chapter 3 Description' },
     { component: <WhyToolBecomesGoalSlide />, title: 'Why Tool Becomes Goal Slide' },
-    { component: <InvisibleReasonSlide />, title: 'Invisible Reason Slide' },
-    { component: <CostEffectivenessSlide />, title: 'Cost Effectiveness Slide' },
+    { component: <ChartImageSlide />, title: 'Chart Image' },
     { component: <DiverseChangeSlide />, title: 'Diverse Change Slide' },
+    { component: <CostEffectivenessSlide />, title: 'Cost Effectiveness Slide' },
+    { component: <InvisibleReasonSlide />, title: 'Invisible Reason Slide' },
+    { component: <ClueSlide />, title: 'Clue' },
     { component: <DigitalStrengthSlide />, title: 'Digital Strength Slide' },
+    { component: <BackToBasicsSlide />, title: 'Back to Basics' },
+    { component: <ComputerStrengthsSlide />, title: 'Computer Strengths' },
     { component: <ThreeStrengthsSlide />, title: 'Three Strengths Slide' },
-        { component: <Chapter3 />, title: 'Chapter 3' },
+    { component: <ClassificationSlide />, title: 'Classification' },
+    { component: <ScaleOutSlide />, title: 'Scale Out' },
+    { component: <UserPsychologySlide />, title: 'User Psychology' },
+    { component: <ConclusionPreludeWide2 />, title: 'Conclusion Prelude Wide2' },
+    { component: <ScaleOutQuantificationSlide />, title: 'Scale Out Quantification' },
+    { component: <Chapter3 />, title: 'Chapter 3' },
     { component: <Chart5 />, title: 'Chart 5' },
     { component: <Chart6 />, title: 'Chart 6' },
     { component: <Chapter2Description />, title: 'Chapter 2 Description' },
     { component: <DigitalCannotStopSlide />, title: 'Digital Cannot Stop' },
+    { component: <ControlKPI />, title: 'Control KPI' },
     { component: <BalanceSenseSlide />, title: 'Balance Sense' },
     { component: <ExitKPIContent />, title: 'Exit KPI Content' },
     { component: <WhyExitKPI />, title: 'Why Exit KPI' },
     { component: <ExitKPIExamples />, title: 'Exit KPI Examples' },
-    { component: <UserPsychologySlide />, title: 'User Psychology' },
     { component: <ExitIsLossCutting />, title: 'Exit Is Loss Cutting' },
     { component: <DigitalInvestmentPrinciple />, title: 'Digital Investment Principle' },
     { component: <FinalSummary />, title: 'Final Summary' },
     { component: <WisdomBattleSlide />, title: 'Wisdom Battle Slide' },
-    { component: <ConclusionPreludeExpand />, title: 'Conclusion Prelude Expand' },
     { component: <KeyMessage />, title: 'Key Message' },
     { component: <ThankYou />, title: 'Thank You' },
+    { component: <BackToBasicsSlide />, title: 'Back To Basics Slide' },
   ];
 
   const totalSlides = slides.length;
@@ -215,7 +232,7 @@ export default function App() {
                   ? 'bg-[#FCCE00] w-8'
                   : 'bg-white/50 hover:bg-white/70 w-2'
               }`}
-              aria-label={`スライド ${index + 1} へ移動`}
+              aria-label={`スライ ${index + 1} へ移動`}
             />
           ))}
         </div>
