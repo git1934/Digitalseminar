@@ -1,9 +1,17 @@
 export function ClueSlide() {
   return (
     <section className="relative h-screen w-screen bg-black overflow-hidden flex items-center justify-center">
+
+      {/* 背景タイポグラフィ */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <span className="text-gray-500/20 font-black text-[14rem] md:text-[18rem] tracking-tight select-none">
+          Solutions
+        </span>
+      </div>
       
       {/* 背景の幾何学模様：縦ライン＋ドット */}
       <div className="absolute inset-0 opacity-15 pointer-events-none">
+        
         {/* 縦ライン */}
         <div className="absolute inset-0 flex justify-between">
           {[...Array(8)].map((_, i) => (

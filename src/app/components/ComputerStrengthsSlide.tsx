@@ -74,7 +74,7 @@ export function ComputerStrengthsSlide() {
       {/* メインテキスト */}
       <h1 className="relative z-10 text-white font-black text-[8.5rem] md:text-[10.5rem] tracking-tight text-center leading-tight">
         コンピュータの<br />
-        三大長所
+        ３大長所
       </h1>
     </section>
   );

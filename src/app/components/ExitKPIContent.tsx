@@ -9,7 +9,7 @@ export function ExitKPIContent() {
         
         {/* Background watermark */}
         <div className="absolute top-0 right-0 text-[240px] font-black text-[#e1e1e1] opacity-30 leading-none pointer-events-none">
-          02
+          03
         </div>
 
         <div className="relative z-10 w-full">

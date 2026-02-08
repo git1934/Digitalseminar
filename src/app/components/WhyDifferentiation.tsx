@@ -20,37 +20,41 @@ export function WhyDifferentiation() {
   ];
 
   return (
-    <section className="h-screen overflow-hidden flex items-center justify-center bg-white px-16 py-10">
-      <div className="max-w-[1440px] w-full h-full flex flex-col justify-center">
-        {/* Header */}
-        <div className="mb-8 text-center">
-          <div className="flex items-center justify-center gap-4 mb-4">
-  
+    // 全体のパディングを調整（上部を少し下げ、下部をしっかり空ける）
+    <section className="h-screen overflow-hidden flex items-start justify-center bg-white px-16 pt-16 pb-32">
+      
+      <div className="max-w-[1200px] w-full flex flex-col">
+        
+        {/* Header: マージンを少し縮小 */}
+        <div className="mb-10 text-center">
+          <div className="flex items-center justify-center gap-3 mb-2">
+            {/* <Target className="w-10 h-10 text-[#FCCE00]" /> */}
           </div>
-          <h1 className="text-7xl font-black text-black leading-tight">
+          <h1 className="text-6xl font-black text-black leading-tight">
             中小企業に差別化が重要な理由
           </h1>
         </div>
 
-        {/* Reasons */}
+        {/* Reasons: ボックス間の隙間を space-y-4 に微減 */}
         <div className="space-y-6">
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="bg-white border-4 border-black rounded-2xl p-8 shadow-xl"
+              // p-8 から p-5 に縮小。境界線も少し細く(border-2)して圧迫感を軽減
+              className="bg-white border-2 border-black rounded-xl p-6 shadow-lg"
             >
-              <div className="flex items-center gap-6">
-                {/* Number Badge */}
-                <div className="flex-shrink-0 w-20 h-20 bg-[#FCCE00] text-black rounded-full flex items-center justify-center">
-                  <span className="text-4xl font-black">{reason.number}</span>
+              <div className="flex items-center gap-5">
+                {/* Number Badge: サイズを少しコンパクトに */}
+                <div className="flex-shrink-0 w-16 h-16 bg-[#FCCE00] text-black rounded-full flex items-center justify-center">
+                  <span className="text-3xl font-black">{reason.number}</span>
                 </div>
 
                 {/* Content */}
                 <div className="flex-1">
-                  <h2 className="text-4xl font-black text-black mb-2 leading-tight">
+                  <h2 className="text-4xl font-black text-black mb-1 leading-tight">
                     {reason.title}
                   </h2>
-                  <p className="text-2xl text-gray-700 leading-relaxed">
+                  <p className="text-2xl text-gray-700 leading-snug">
                     {reason.description}
                   </p>
                 </div>
@@ -58,7 +62,6 @@ export function WhyDifferentiation() {
             </div>
           ))}
         </div>
-<div className="h-12" />
         
       </div>
     </section>

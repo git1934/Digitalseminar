@@ -1,27 +1,36 @@
+import { useState } from 'react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function ChartImageSlide() {
+  const [loading, setLoading] = useState(true);
+
   return (
     <section className="h-screen w-screen bg-black overflow-hidden relative px-8 pt-8 pb-28">
-      {/* 四隅のフレーム装飾 */}
-      <div className="absolute top-0 left-0 w-24 h-24 border-l-[20px] border-t-[20px] border-[#FCCE00]" />
-      <div className="absolute top-0 right-0 w-24 h-24 border-r-[20px] border-t-[20px] border-[#FCCE00]" />
-      <div className="absolute bottom-0 left-0 w-24 h-24 border-l-[20px] border-b-[20px] border-[#FCCE00]" />
-      <div className="absolute bottom-0 right-0 w-24 h-24 border-r-[20px] border-b-[20px] border-[#FCCE00]" />
 
-      {/* メイン画像（最大表示） */}
+      {/* メイン画像エリア */}
       <div className="relative z-10 w-full h-full flex items-center justify-center">
+
+        {/* ローディング表示 */}
+        {loading && (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-20 h-20 border-4 border-white/20 border-t-white rounded-full animate-spin" />
+          </div>
+        )}
+
         <ImageWithFallback
           src="https://raw.githubusercontent.com/git1934/seminar_image/main/chart.png"
           alt="Chart"
-          className="
+          onLoad={() => setLoading(false)}
+          className={`
             max-w-full
             max-h-full
             object-contain
             border-[30px]
             border-white
             rounded-[24px]
-          "
+            transition-opacity duration-500
+            ${loading ? 'opacity-0' : 'opacity-100'}
+          `}
         />
       </div>
 

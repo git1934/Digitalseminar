@@ -17,11 +17,13 @@ import { Chapter2 } from "./components/Chapter2";
 import { DataIdeaSlide } from "./components/DataIdeaSlide";
 import { Chart3 } from "./components/Chart3";
 import { Chart4 } from "./components/Chart4";
+import { GenerativeAISlide } from "./components/GenerativeAISlide";
 import { Chapter2Description } from "./components/Chapter2Description";
 import { WhyExitKPI } from "./components/WhyExitKPI";
 import { ExitKPIContent } from "./components/ExitKPIContent";
 import { ExitKPIExamples } from "./components/ExitKPIExamples";
 import { ExitIsLossCutting } from "./components/ExitIsLossCutting";
+import { TradeOffSlide } from "./components/TradeOffSlide";
 import { DigitalInvestmentPrinciple } from "./components/DigitalInvestmentPrinciple";
 import { DigitalStrengthSlide } from "./components/DigitalStrengthSlide";
 import { ThreeStrengthsSlide } from "./components/ThreeStrengthsSlide";
@@ -36,10 +38,12 @@ import { FinalSummary } from "./components/FinalSummary";
 import { WisdomBattleSlide } from "./components/WisdomBattleSlide";
 import { KeyMessage } from "./components/KeyMessage";
 import { ConclusionPreludeExpand } from "./components/ConclusionPreludeExpand";
+import { ConclusionPreludeWide } from "./components/ConclusionPreludeWide";
 import { ThankYou } from "./components/ThankYou";
 import { DramaticPause } from "./components/DramaticPause";
 import { SimpleAnswerSlide } from "./components/SimpleAnswerSlide";
 import { SuccessCaseSlide } from "./components/SuccessCaseSlide";
+import { TopDownBottomUpSlide } from "./components/TopDownBottomUpSlide";
 import { ReallySlide } from "./components/ReallySlide";
 import { CostEffectivenessSlide } from "./components/CostEffectivenessSlide";
 import { DiverseChangeSlide } from "./components/DiverseChangeSlide";
@@ -56,6 +60,9 @@ import { ChartImageSlide } from "./components/ChartImageSlide";
 import { BackToBasicsSlide } from "./components/BackToBasicsSlide";
 import { ConclusionPreludeWide2 } from "./components/ConclusionPreludeWide2";
 import { ClassificationSlide } from "./components/ClassificationSlide";
+import { ActionAttitudeSlide } from "./components/ActionAttitudeSlide";
+import { InformationWarEndSlide } from "./components/InformationWarEndSlide";
+import { StrategyIntroSlide } from "./components/StrategyIntroSlide";
 
 export default function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -75,12 +82,15 @@ export default function App() {
     { component: <Chapter1Description />, title: 'Chapter 1 Description' },
     { component: <WhyDifferentiation />, title: 'Why Differentiation' },
     { component: <DramaticPause />, title: 'Dramatic Pause' },
+    { component: <TopDownBottomUpSlide />, title: 'Top Down Bottom Up Slide' },
     { component: <SimpleAnswerSlide />, title: 'Simple Answer Slide' },
     { component: <SuccessCaseSlide />, title: 'Success Case Slide' },
     { component: <ReallySlide />, title: 'Really Slide' },
     { component: <DifferentiationIntroSlide />, title: 'Differentiation Intro Slide' },
+    { component: <StrategyIntroSlide />, title: 'Strategy Intro Slide' },
     { component: <StrategyComparison />, title: 'Strategy Comparison' },
     { component: <DifferentiationContent />, title: 'Differentiation Content' },
+    { component: <ConclusionPreludeWide />, title: 'Conclusion Prelude Wide' },
     { component: <DataIdeaSlide />, title: 'Data Idea Slide' },
     { component: <Chapter2 />, title: 'Chapter 2' },
     { component: <Chart3 />, title: 'Chart 3' },
@@ -107,17 +117,20 @@ export default function App() {
     { component: <Chapter2Description />, title: 'Chapter 2 Description' },
     { component: <DigitalCannotStopSlide />, title: 'Digital Cannot Stop' },
     { component: <ControlKPI />, title: 'Control KPI' },
-    { component: <BalanceSenseSlide />, title: 'Balance Sense' },
     { component: <ExitKPIContent />, title: 'Exit KPI Content' },
     { component: <WhyExitKPI />, title: 'Why Exit KPI' },
     { component: <ExitKPIExamples />, title: 'Exit KPI Examples' },
-    { component: <ExitIsLossCutting />, title: 'Exit Is Loss Cutting' },
     { component: <DigitalInvestmentPrinciple />, title: 'Digital Investment Principle' },
-    { component: <FinalSummary />, title: 'Final Summary' },
+    { component: <BalanceSenseSlide />, title: 'Balance Sense' },
+    { component: <ExitIsLossCutting />, title: 'Exit Is Loss Cutting' },
+    { component: <TradeOffSlide />, title: 'Trade Off' },
+    { component: <ActionAttitudeSlide />, title: 'Action Attitude' },
+    { component: <GenerativeAISlide />, title: 'Generative AI' },
+    { component: <InformationWarEndSlide />, title: 'Information War End' },
     { component: <WisdomBattleSlide />, title: 'Wisdom Battle Slide' },
     { component: <KeyMessage />, title: 'Key Message' },
+    { component: <ConclusionPreludeExpand />, title: 'Conclusion Prelude Expand' },
     { component: <ThankYou />, title: 'Thank You' },
-    { component: <BackToBasicsSlide />, title: 'Back To Basics Slide' },
   ];
 
   const totalSlides = slides.length;

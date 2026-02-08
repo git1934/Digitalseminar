@@ -59,7 +59,7 @@ export function DifferentiationIntroSlide() {
       {/* メインテキスト */}
       <div className="relative z-10 flex flex-col items-center">
         <h1 className="text-white font-black text-[rem] md:text-[10rem] tracking-tight">
-          そもそも差別化とは？
+          差別化とは？
         </h1>
       </div>
     </section>

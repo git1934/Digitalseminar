@@ -7,7 +7,7 @@ export function DigitalInvestmentPrinciple() {
         {/* Header */}
         <div className="text-center">
           <h1 className="text-6xl font-black text-black mb-2 leading-tight tracking-tight">
-            デジタル戦略の原則は損小利大
+            デジタル戦略の原則
          
           </h1>
         </div>
@@ -22,11 +22,11 @@ export function DigitalInvestmentPrinciple() {
               </div>
               <div>
                 <h3 className="text-4xl font-black text-black leading-tight">
-                  損小
+                  損小（リスクの最小化）
                 </h3>
-                <p className="text-lg text-gray-700 leading-tight">
+                {/* <p className="text-lg text-gray-700 leading-tight">
                   リスクの最小化
-                </p>
+                </p> */}
               </div>
             </div>
 
@@ -90,11 +90,11 @@ export function DigitalInvestmentPrinciple() {
               </div>
               <div>
                 <h3 className="text-4xl font-black text-black leading-tight">
-                  利大
+                  利大（利益の最大化）
                 </h3>
-                <p className="text-lg text-gray-700 leading-tight">
+                {/* <p className="text-lg text-gray-700 leading-tight">
                   利益の最大化
-                </p>
+                </p> */}
               </div>
             </div>
 

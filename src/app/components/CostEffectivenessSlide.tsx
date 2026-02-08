@@ -98,9 +98,19 @@ export function CostEffectivenessSlide() {
       </div>
 
       {/* メインテキスト */}
-      <h1 className="relative z-10 text-white font-black text-[10rem] md:text-[12rem] tracking-tight">
-        費用対効果?
-      </h1>
+      <div className="relative z-10 flex items-center gap-12 font-black tracking-tight">
+        <span className="text-white text-[7rem] md:text-[9rem]">
+          費用
+        </span>
+
+        <span className="text-[#FCCE00] text-[5rem] md:text-[6rem]">
+          vs
+        </span>
+
+        <span className="text-white text-[7rem] md:text-[9rem]">
+          効果
+        </span>
+      </div>
     </section>
   );
 }

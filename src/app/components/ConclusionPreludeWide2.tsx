@@ -1,10 +1,9 @@
 export function ConclusionPreludeWide2() {
   const scans = [
-    // 中央付近に密度を寄せる
     { offset: -180, scale: 0.8, delay: 0 },
     { offset: -120, scale: 1.0, delay: 0.15 },
     { offset: -60,  scale: 0.9, delay: 0.3 },
-    { offset: 0,    scale: 1.2, delay: 0.45 }, // ど真ん中
+    { offset: 0,    scale: 1.2, delay: 0.45 },
     { offset: 60,   scale: 1.0, delay: 0.6 },
     { offset: 120,  scale: 0.85, delay: 0.75 },
     { offset: 180,  scale: 1.1, delay: 0.9 },
@@ -55,21 +54,31 @@ export function ConclusionPreludeWide2() {
           stroke-width: 2;
           stroke-dasharray: 600;
           stroke-dashoffset: 600;
-          opacity: 0.9;
-          animation: scanIn 1.4s ease-out forwards;
+          opacity: 0;
+          animation:
+            lineFadeIn 0.5s ease-out forwards,
+            scanIn 1.4s ease-out forwards;
         }
 
         .scan-line.reverse {
-          animation-name: scanInReverse;
+          animation-name:
+            lineFadeIn,
+            scanInReverse;
+        }
+
+        /* 線だけフェードイン */
+        @keyframes lineFadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 0.9;
+          }
         }
 
         @keyframes scanIn {
           0% {
             stroke-dashoffset: 600;
-            opacity: 0;
-          }
-          60% {
-            opacity: 1;
           }
           100% {
             stroke-dashoffset: -600;
@@ -80,10 +89,6 @@ export function ConclusionPreludeWide2() {
         @keyframes scanInReverse {
           0% {
             stroke-dashoffset: -600;
-            opacity: 0;
-          }
-          60% {
-            opacity: 1;
           }
           100% {
             stroke-dashoffset: 600;
