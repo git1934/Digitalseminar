@@ -122,7 +122,7 @@ export function DiverseChangeSlide() {
 
       {/* メインテキスト */}
       <h1 className="relative z-10 text-white font-black text-[10rem] md:text-[12rem] tracking-tight">
-        多様な変化?
+        多様な変化
       </h1>
     </section>
   );

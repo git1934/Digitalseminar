@@ -1,6 +1,13 @@
 export function ComputerStrengthsSlide() {
   return (
     <section className="h-screen w-screen bg-black flex items-center justify-center overflow-hidden relative">
+
+      {/* 背景タイポグラフィ */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <span className="text-gray-500/20 font-black text-[14rem] md:text-[18rem] tracking-tight select-none">
+          Strong Point
+        </span>
+      </div>
       
       {/* 背景：コンピュータ的構造・処理ライン */}
       <div className="absolute inset-0 opacity-15 pointer-events-none">

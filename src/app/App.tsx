@@ -63,6 +63,8 @@ import { ClassificationSlide } from "./components/ClassificationSlide";
 import { ActionAttitudeSlide } from "./components/ActionAttitudeSlide";
 import { InformationWarEndSlide } from "./components/InformationWarEndSlide";
 import { StrategyIntroSlide } from "./components/StrategyIntroSlide";
+import { IntroductionIsNotGoalSlide } from "./components/IntroductionIsNotGoalSlide";
+import { LinksComparisonSlide } from "./components/LinksComparisonSlide";
 
 export default function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -71,6 +73,7 @@ export default function App() {
   const slides = [
     { component: <Hero />, title: 'Hero' },
     { component: <Introduction />, title: 'Introduction' },
+    { component: <LinksComparisonSlide />, title: 'Links Comparison' },
     { component: <NewspaperSlide />, title: 'Newspaper' },
     { component: <POSExpertise />, title: 'POS Expertise' },
     { component: <ExperientialSeminarSlide />, title: 'Experiential Seminar' },
@@ -102,11 +105,12 @@ export default function App() {
     { component: <CostEffectivenessSlide />, title: 'Cost Effectiveness Slide' },
     { component: <InvisibleReasonSlide />, title: 'Invisible Reason Slide' },
     { component: <ClueSlide />, title: 'Clue' },
-    { component: <DigitalStrengthSlide />, title: 'Digital Strength Slide' },
     { component: <BackToBasicsSlide />, title: 'Back to Basics' },
+ 
     { component: <ComputerStrengthsSlide />, title: 'Computer Strengths' },
     { component: <ThreeStrengthsSlide />, title: 'Three Strengths Slide' },
-    { component: <ClassificationSlide />, title: 'Classification' },
+    { component: <DigitalStrengthSlide />, title: 'Digital Strength Slide' },  
+    // { component: <ClassificationSlide />, title: 'Classification' },
     { component: <ScaleOutSlide />, title: 'Scale Out' },
     { component: <UserPsychologySlide />, title: 'User Psychology' },
     { component: <ConclusionPreludeWide2 />, title: 'Conclusion Prelude Wide2' },
@@ -117,6 +121,7 @@ export default function App() {
     { component: <Chapter2Description />, title: 'Chapter 2 Description' },
     { component: <DigitalCannotStopSlide />, title: 'Digital Cannot Stop' },
     { component: <ControlKPI />, title: 'Control KPI' },
+    { component: <IntroductionIsNotGoalSlide />, title: 'Introduction Is Not Goal' },
     { component: <ExitKPIContent />, title: 'Exit KPI Content' },
     { component: <WhyExitKPI />, title: 'Why Exit KPI' },
     { component: <ExitKPIExamples />, title: 'Exit KPI Examples' },
