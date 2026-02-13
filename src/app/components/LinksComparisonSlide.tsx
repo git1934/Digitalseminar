@@ -11,7 +11,7 @@ export function LinksComparisonSlide() {
             お客さまのDXを加速させる
           </h1>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 tracking-wide">
-            共創ラボ <span className="text-[#00d4ff]">LINKSPARK</span>
+            共創ラボ <span className="text-[#FCCE00]">LINKSPARK</span>
           </h2>
         </div>
 

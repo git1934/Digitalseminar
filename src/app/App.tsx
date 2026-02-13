@@ -1,71 +1,70 @@
-import { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { Introduction } from "./components/Introduction";
+import { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Hero } from "./components/Hero";
-import { Survey } from "./components/Survey";
+import { Introduction } from "./components/Introduction";
+import { NewspaperSlide } from "./components/NewspaperSlide";
 import { POSExpertise } from "./components/POSExpertise";
+import { ExperientialSeminarSlide } from "./components/ExperientialSeminarSlide";
+import { Survey } from "./components/Survey";
 import { ThreePoints } from "./components/ThreePoints";
 import { Chapter1 } from "./components/Chapter1";
 import { Chart1 } from "./components/Chart1";
 import { Chart2 } from "./components/Chart2";
 import { Chapter1Description } from "./components/Chapter1Description";
 import { WhyDifferentiation } from "./components/WhyDifferentiation";
+import { DramaticPause } from "./components/DramaticPause";
+import { TopDownBottomUpSlide } from "./components/TopDownBottomUpSlide";
+import { SimpleAnswerSlide } from "./components/SimpleAnswerSlide";
+import { SuccessCaseSlide } from "./components/SuccessCaseSlide";
+import { ReallySlide } from "./components/ReallySlide";
 import { DifferentiationIntroSlide } from "./components/DifferentiationIntroSlide";
-import { DifferentiationContent } from "./components/DifferentiationContent";
+import { StrategyIntroSlide } from "./components/StrategyIntroSlide";
 import { StrategyComparison } from "./components/StrategyComparison";
-import { Chapter2 } from "./components/Chapter2";
+import { DifferentiationContent } from "./components/DifferentiationContent";
+import { ConclusionPreludeWide } from "./components/ConclusionPreludeWide";
 import { DataIdeaSlide } from "./components/DataIdeaSlide";
+import { Chapter2 } from "./components/Chapter2";
 import { Chart3 } from "./components/Chart3";
 import { Chart4 } from "./components/Chart4";
-import { GenerativeAISlide } from "./components/GenerativeAISlide";
-import { Chapter2Description } from "./components/Chapter2Description";
-import { WhyExitKPI } from "./components/WhyExitKPI";
-import { ExitKPIContent } from "./components/ExitKPIContent";
-import { ExitKPIExamples } from "./components/ExitKPIExamples";
-import { ExitIsLossCutting } from "./components/ExitIsLossCutting";
-import { TradeOffSlide } from "./components/TradeOffSlide";
-import { DigitalInvestmentPrinciple } from "./components/DigitalInvestmentPrinciple";
-import { DigitalStrengthSlide } from "./components/DigitalStrengthSlide";
-import { ThreeStrengthsSlide } from "./components/ThreeStrengthsSlide";
+import { Chapter3Description } from "./components/Chapter3Description";
+import { WhyToolBecomesGoalSlide } from "./components/WhyToolBecomesGoalSlide";
+import { ChartImageSlide } from "./components/ChartImageSlide";
+import { DiverseChangeSlide } from "./components/DiverseChangeSlide";
+import { CostEffectivenessSlide } from "./components/CostEffectivenessSlide";
 import { InvisibleReasonSlide } from "./components/InvisibleReasonSlide";
 import { ClueSlide } from "./components/ClueSlide";
+import { BackToBasicsSlide } from "./components/BackToBasicsSlide";
+import { ComputerStrengthsSlide } from "./components/ComputerStrengthsSlide";
+import { ThreeStrengthsSlide } from "./components/ThreeStrengthsSlide";
+import { DigitalStrengthSlide } from "./components/DigitalStrengthSlide";
+import { ScaleOutSlide } from "./components/ScaleOutSlide";
+import { UserPsychologySlide } from "./components/UserPsychologySlide";
+import { ConclusionPreludeWide2 } from "./components/ConclusionPreludeWide2";
+import { ScaleOutQuantificationSlide } from "./components/ScaleOutQuantificationSlide";
 import { Chapter3 } from "./components/Chapter3";
 import { Chart5 } from "./components/Chart5";
 import { Chart6 } from "./components/Chart6";
-import { Chapter3Description } from "./components/Chapter3Description";
-import { WhyToolBecomesGoalSlide } from "./components/WhyToolBecomesGoalSlide";
-import { FinalSummary } from "./components/FinalSummary";
+import { Chapter2Description } from "./components/Chapter2Description";
+import { DigitalCannotStopSlide } from "./components/DigitalCannotStopSlide";
+import { ControlKPI } from "./components/ControlKPI";
+import { ExitKPIContent } from "./components/ExitKPIContent";
+import { WhyExitKPI } from "./components/WhyExitKPI";
+import { ExitKPIExamples } from "./components/ExitKPIExamples";
+import { DigitalInvestmentPrinciple } from "./components/DigitalInvestmentPrinciple";
+import { BalanceSenseSlide } from "./components/BalanceSenseSlide";
+import { ExitIsLossCutting } from "./components/ExitIsLossCutting";
+import { TradeOffSlide } from "./components/TradeOffSlide";
+import { ActionAttitudeSlide } from "./components/ActionAttitudeSlide";
+import { GenerativeAISlide } from "./components/GenerativeAISlide";
+import { InformationWarEndSlide } from "./components/InformationWarEndSlide";
 import { WisdomBattleSlide } from "./components/WisdomBattleSlide";
 import { KeyMessage } from "./components/KeyMessage";
 import { ConclusionPreludeExpand } from "./components/ConclusionPreludeExpand";
-import { ConclusionPreludeWide } from "./components/ConclusionPreludeWide";
 import { ThankYou } from "./components/ThankYou";
-import { DramaticPause } from "./components/DramaticPause";
-import { SimpleAnswerSlide } from "./components/SimpleAnswerSlide";
-import { SuccessCaseSlide } from "./components/SuccessCaseSlide";
-import { TopDownBottomUpSlide } from "./components/TopDownBottomUpSlide";
-import { ReallySlide } from "./components/ReallySlide";
-import { CostEffectivenessSlide } from "./components/CostEffectivenessSlide";
-import { DiverseChangeSlide } from "./components/DiverseChangeSlide";
-import { NewspaperSlide } from "./components/NewspaperSlide";
-import { ExperientialSeminarSlide } from "./components/ExperientialSeminarSlide";
-import { UserPsychologySlide } from "./components/UserPsychologySlide";
-import { DigitalCannotStopSlide } from "./components/DigitalCannotStopSlide";
-import { BalanceSenseSlide } from "./components/BalanceSenseSlide";
-import { ComputerStrengthsSlide } from "./components/ComputerStrengthsSlide";
-import { ScaleOutSlide } from "./components/ScaleOutSlide";
-import { ScaleOutQuantificationSlide } from "./components/ScaleOutQuantificationSlide";
-import { ControlKPI } from "./components/ControlKPI";
-import { ChartImageSlide } from "./components/ChartImageSlide";
-import { BackToBasicsSlide } from "./components/BackToBasicsSlide";
-import { ConclusionPreludeWide2 } from "./components/ConclusionPreludeWide2";
-import { ClassificationSlide } from "./components/ClassificationSlide";
-import { ActionAttitudeSlide } from "./components/ActionAttitudeSlide";
-import { InformationWarEndSlide } from "./components/InformationWarEndSlide";
-import { StrategyIntroSlide } from "./components/StrategyIntroSlide";
 import { IntroductionIsNotGoalSlide } from "./components/IntroductionIsNotGoalSlide";
 import { LinksComparisonSlide } from "./components/LinksComparisonSlide";
 import { TwoPillarsSlide } from "./components/TwoPillarsSlide";
+import { N } from "./components/N";
 
 export default function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -75,9 +74,9 @@ export default function App() {
     { component: <Hero />, title: 'Hero' },
     { component: <Introduction />, title: 'Introduction' },
     { component: <LinksComparisonSlide />, title: 'Links Comparison' },
+    { component: <TwoPillarsSlide />, title: 'Two Pillars' },
     { component: <NewspaperSlide />, title: 'Newspaper' },
     { component: <POSExpertise />, title: 'POS Expertise' },
-    { component: <TwoPillarsSlide />, title: 'Two Pillars' },
     { component: <ExperientialSeminarSlide />, title: 'Experiential Seminar' },
     { component: <Survey />, title: 'Survey' },
     { component: <ThreePoints />, title: 'Three Points' },
@@ -137,6 +136,8 @@ export default function App() {
     { component: <KeyMessage />, title: 'Key Message' },
     { component: <ConclusionPreludeExpand />, title: 'Conclusion Prelude Expand' },
     { component: <ThankYou />, title: 'Thank You' },
+        { component: <N />, title: 'N' },
+
   ];
 
   const totalSlides = slides.length;
