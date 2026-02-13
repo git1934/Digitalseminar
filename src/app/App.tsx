@@ -65,6 +65,7 @@ import { InformationWarEndSlide } from "./components/InformationWarEndSlide";
 import { StrategyIntroSlide } from "./components/StrategyIntroSlide";
 import { IntroductionIsNotGoalSlide } from "./components/IntroductionIsNotGoalSlide";
 import { LinksComparisonSlide } from "./components/LinksComparisonSlide";
+import { TwoPillarsSlide } from "./components/TwoPillarsSlide";
 
 export default function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -76,6 +77,7 @@ export default function App() {
     { component: <LinksComparisonSlide />, title: 'Links Comparison' },
     { component: <NewspaperSlide />, title: 'Newspaper' },
     { component: <POSExpertise />, title: 'POS Expertise' },
+    { component: <TwoPillarsSlide />, title: 'Two Pillars' },
     { component: <ExperientialSeminarSlide />, title: 'Experiential Seminar' },
     { component: <Survey />, title: 'Survey' },
     { component: <ThreePoints />, title: 'Three Points' },
@@ -106,7 +108,6 @@ export default function App() {
     { component: <InvisibleReasonSlide />, title: 'Invisible Reason Slide' },
     { component: <ClueSlide />, title: 'Clue' },
     { component: <BackToBasicsSlide />, title: 'Back to Basics' },
- 
     { component: <ComputerStrengthsSlide />, title: 'Computer Strengths' },
     { component: <ThreeStrengthsSlide />, title: 'Three Strengths Slide' },
     { component: <DigitalStrengthSlide />, title: 'Digital Strength Slide' },  
