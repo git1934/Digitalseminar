@@ -31,6 +31,7 @@ import { Chart4 } from "./components/Chart4";
 import { Chapter3Description } from "./components/Chapter3Description";
 import { WhyToolBecomesGoalSlide } from "./components/WhyToolBecomesGoalSlide";
 import { ChartImageSlide } from "./components/ChartImageSlide";
+import { Chart2ImageSlide } from "./components/Chart2ImageSlide";
 import { DiverseChangeSlide } from "./components/DiverseChangeSlide";
 import { CostEffectivenessSlide } from "./components/CostEffectivenessSlide";
 import { InvisibleReasonSlide } from "./components/InvisibleReasonSlide";
@@ -59,6 +60,8 @@ import { TradeOffSlide } from "./components/TradeOffSlide";
 import { ActionAttitudeSlide } from "./components/ActionAttitudeSlide";
 import { GenerativeAISlide } from "./components/GenerativeAISlide";
 import { InformationWarEndSlide } from "./components/InformationWarEndSlide";
+import { CommonEnemySlide } from "./components/CommonEnemySlide";
+import { JusticeVsEvilSlide } from "./components/JusticeVsEvilSlide";
 import { WisdomBattleSlide } from "./components/WisdomBattleSlide";
 import { KeyMessage } from "./components/KeyMessage";
 import { ConclusionPreludeExpand } from "./components/ConclusionPreludeExpand";
@@ -68,82 +71,215 @@ import { LinksComparisonSlide } from "./components/LinksComparisonSlide";
 import { TwoPillarsSlide } from "./components/TwoPillarsSlide";
 import { ThreeInteractionSlide } from "./components/ThreeInteractionSlide";
 import { EnjoyForEveryoneSlide } from "./components/EnjoyForEveryoneSlide";
+import { GarbageInGarbageOutSlide } from "./components/GarbageInGarbageOutSlide";
 
 export default function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   // スライドの配列
   const slides = [
-    { component: <Hero />, title: 'Hero' },
-    { component: <Introduction />, title: 'Introduction' },
-    { component: <NewspaperSlide />, title: 'Newspaper' },
-    { component: <LinksComparisonSlide />, title: 'Links Comparison' },
-    { component: <POSExpertise />, title: 'POS Expertise' },
-    { component: <TwoPillarsSlide />, title: 'Two Pillars' },
-    { component: <ExperientialSeminarSlide />, title: 'Experiential Seminar' },
-    { component: <ThreeInteractionSlide />, title: 'Three Interaction' },
-    { component: <Survey />, title: 'Survey' },
-    { component: <RespondentCountSlide />, title: 'Respondent Count' },
-    { component: <ConclusionPreludeWide />, title: 'Conclusion Prelude Wide' },
-    { component: <Chart7 />, title: 'Chart 7' },
-    { component: <EnjoyForEveryoneSlide />, title: 'Enjoy For Everyone' },
-    { component: <ThreePoints />, title: 'Three Points' },
-    { component: <Chapter1 />, title: 'Chapter 1' },
-    { component: <Chart1 />, title: 'Chart 1' },
-    { component: <Chart2 />, title: 'Chart 2' },
-    { component: <Chapter1Description />, title: 'Chapter 1 Description' },
-    { component: <WhyDifferentiation />, title: 'Why Differentiation' },
-    { component: <DramaticPause />, title: 'Dramatic Pause' },
-    { component: <TopDownBottomUpSlide />, title: 'Top Down Bottom Up Slide' },
-    { component: <SimpleAnswerSlide />, title: 'Simple Answer Slide' },
-    { component: <SuccessCaseSlide />, title: 'Success Case Slide' },
-    { component: <ReallySlide />, title: 'Really Slide' },
-    { component: <DifferentiationIntroSlide />, title: 'Differentiation Intro Slide' },
-    { component: <StrategyIntroSlide />, title: 'Strategy Intro Slide' },
-    { component: <StrategyComparison />, title: 'Strategy Comparison' },
-    { component: <DifferentiationContent />, title: 'Differentiation Content' },
-    { component: <ConclusionPreludeWide />, title: 'Conclusion Prelude Wide' },
-    { component: <DataIdeaSlide />, title: 'Data Idea Slide' },
-    { component: <Chapter2 />, title: 'Chapter 2' },
-    { component: <Chart3 />, title: 'Chart 3' },
-    { component: <Chart4 />, title: 'Chart 4' },
-    { component: <Chapter3Description />, title: 'Chapter 3 Description' },
-    { component: <WhyToolBecomesGoalSlide />, title: 'Why Tool Becomes Goal Slide' },
-    { component: <ChartImageSlide />, title: 'Chart Image' },
-    { component: <DiverseChangeSlide />, title: 'Diverse Change Slide' },
-    { component: <CostEffectivenessSlide />, title: 'Cost Effectiveness Slide' },
-    { component: <InvisibleReasonSlide />, title: 'Invisible Reason Slide' },
-    { component: <ClueSlide />, title: 'Clue' },
-    { component: <BackToBasicsSlide />, title: 'Back to Basics' },
-    { component: <ComputerStrengthsSlide />, title: 'Computer Strengths' },
-    { component: <ThreeStrengthsSlide />, title: 'Three Strengths Slide' },
-    { component: <DigitalStrengthSlide />, title: 'Digital Strength Slide' },  
+    { component: <Hero />, title: "Hero" },
+    { component: <Introduction />, title: "Introduction" },
+    { component: <NewspaperSlide />, title: "Newspaper" },
+    {
+      component: <LinksComparisonSlide />,
+      title: "Links Comparison",
+    },
+    { component: <POSExpertise />, title: "POS Expertise" },
+    { component: <TwoPillarsSlide />, title: "Two Pillars" },
+    {
+      component: <ExperientialSeminarSlide />,
+      title: "Experiential Seminar",
+    },
+    {
+      component: <ThreeInteractionSlide />,
+      title: "Three Interaction",
+    },
+    { component: <Survey />, title: "Survey" },
+    {
+      component: <RespondentCountSlide />,
+      title: "Respondent Count",
+    },
+    // { component: <ConclusionPreludeWide />, title: 'Conclusion Prelude Wide' },
+    { component: <Chart7 />, title: "Chart 7" },
+    {
+      component: <EnjoyForEveryoneSlide />,
+      title: "Enjoy For Everyone",
+    },
+    { component: <ThreePoints />, title: "Three Points" },
+    { component: <Chapter1 />, title: "Chapter 1" },
+    { component: <Chart1 />, title: "Chart 1" },
+    { component: <Chart2 />, title: "Chart 2" },
+    {
+      component: <Chapter1Description />,
+      title: "Chapter 1 Description",
+    },
+    {
+      component: <WhyDifferentiation />,
+      title: "Why Differentiation",
+    },
+    { component: <DramaticPause />, title: "Dramatic Pause" },
+    {
+      component: <TopDownBottomUpSlide />,
+      title: "Top Down Bottom Up Slide",
+    },
+    {
+      component: <SimpleAnswerSlide />,
+      title: "Simple Answer Slide",
+    },
+    {
+      component: <SuccessCaseSlide />,
+      title: "Success Case Slide",
+    },
+    { component: <ReallySlide />, title: "Really Slide" },
+    {
+      component: <DifferentiationIntroSlide />,
+      title: "Differentiation Intro Slide",
+    },
+    {
+      component: <StrategyIntroSlide />,
+      title: "Strategy Intro Slide",
+    },
+    {
+      component: <StrategyComparison />,
+      title: "Strategy Comparison",
+    },
+    {
+      component: <DifferentiationContent />,
+      title: "Differentiation Content",
+    },
+    {
+      component: <ConclusionPreludeWide />,
+      title: "Conclusion Prelude Wide",
+    },
+    { component: <DataIdeaSlide />, title: "Data Idea Slide" },
+    { component: <Chapter2 />, title: "Chapter 2" },
+    { component: <Chart3 />, title: "Chart 3" },
+    { component: <Chart4 />, title: "Chart 4" },
+    {
+      component: <Chapter3Description />,
+      title: "Chapter 3 Description",
+    },
+    {
+      component: <WhyToolBecomesGoalSlide />,
+      title: "Why Tool Becomes Goal Slide",
+    },
+    { component: <ChartImageSlide />, title: "Chart Image" },
+    { component: <Chart2ImageSlide />, title: "Chart 2 Image" },
+    {
+      component: <DiverseChangeSlide />,
+      title: "Diverse Change Slide",
+    },
+    {
+      component: <CostEffectivenessSlide />,
+      title: "Cost Effectiveness Slide",
+    },
+    {
+      component: <InvisibleReasonSlide />,
+      title: "Invisible Reason Slide",
+    },
+    { component: <ClueSlide />, title: "Clue" },
+
+    {
+      component: <ComputerStrengthsSlide />,
+      title: "Computer Strengths",
+    },
+    {
+      component: <ThreeStrengthsSlide />,
+      title: "Three Strengths Slide",
+    },
+    {
+      component: <DigitalStrengthSlide />,
+      title: "Digital Strength Slide",
+    },
     // { component: <ClassificationSlide />, title: 'Classification' },
-    { component: <ScaleOutSlide />, title: 'Scale Out' },
-    { component: <UserPsychologySlide />, title: 'User Psychology' },
-    { component: <ConclusionPreludeWide2 />, title: 'Conclusion Prelude Wide2' },
-    { component: <ScaleOutQuantificationSlide />, title: 'Scale Out Quantification' },
-    { component: <Chapter3 />, title: 'Chapter 3' },
-    { component: <Chart5 />, title: 'Chart 5' },
-    { component: <Chart6 />, title: 'Chart 6' },
-    { component: <Chapter2Description />, title: 'Chapter 2 Description' },
-    { component: <DigitalCannotStopSlide />, title: 'Digital Cannot Stop' },
-    { component: <ControlKPI />, title: 'Control KPI' },
-    { component: <IntroductionIsNotGoalSlide />, title: 'Introduction Is Not Goal' },
-    { component: <ExitKPIContent />, title: 'Exit KPI Content' },
-    { component: <WhyExitKPI />, title: 'Why Exit KPI' },
-    { component: <ExitKPIExamples />, title: 'Exit KPI Examples' },
-    { component: <DigitalInvestmentPrinciple />, title: 'Digital Investment Principle' },
-    { component: <BalanceSenseSlide />, title: 'Balance Sense' },
-    { component: <ExitIsLossCutting />, title: 'Exit Is Loss Cutting' },
-    { component: <TradeOffSlide />, title: 'Trade Off' },
-    { component: <ActionAttitudeSlide />, title: 'Action Attitude' },
-    { component: <GenerativeAISlide />, title: 'Generative AI' },
-    { component: <InformationWarEndSlide />, title: 'Information War End' },
-    { component: <WisdomBattleSlide />, title: 'Wisdom Battle Slide' },
-    { component: <KeyMessage />, title: 'Key Message' },
-    { component: <ConclusionPreludeExpand />, title: 'Conclusion Prelude Expand' },
-    { component: <ThankYou />, title: 'Thank You' },
+    { component: <ScaleOutSlide />, title: "Scale Out" },
+    {
+      component: <UserPsychologySlide />,
+      title: "User Psychology",
+    },
+    {
+      component: <ConclusionPreludeWide2 />,
+      title: "Conclusion Prelude Wide2",
+    },
+    {
+      component: <ScaleOutQuantificationSlide />,
+      title: "Scale Out Quantification",
+    },
+    { component: <Chapter3 />, title: "Chapter 3" },
+    { component: <Chart5 />, title: "Chart 5" },
+    { component: <Chart6 />, title: "Chart 6" },
+    {
+      component: <Chapter2Description />,
+      title: "Chapter 2 Description",
+    },
+    {
+      component: <DigitalCannotStopSlide />,
+      title: "Digital Cannot Stop",
+    },
+    { component: <ControlKPI />, title: "Control KPI" },
+    {
+      component: <IntroductionIsNotGoalSlide />,
+      title: "Introduction Is Not Goal",
+    },
+    {
+      component: <ExitKPIContent />,
+      title: "Exit KPI Content",
+    },
+    { component: <WhyExitKPI />, title: "Why Exit KPI" },
+    {
+      component: <ExitKPIExamples />,
+      title: "Exit KPI Examples",
+    },
+    {
+      component: <DigitalInvestmentPrinciple />,
+      title: "Digital Investment Principle",
+    },
+    {
+      component: <BalanceSenseSlide />,
+      title: "Balance Sense",
+    },
+    {
+      component: <ExitIsLossCutting />,
+      title: "Exit Is Loss Cutting",
+    },
+    { component: <TradeOffSlide />, title: "Trade Off" },
+    {
+      component: <ActionAttitudeSlide />,
+      title: "Action Attitude",
+    },
+    {
+      component: <GenerativeAISlide />,
+      title: "Generative AI",
+    },
+
+    {
+      component: <InformationWarEndSlide />,
+      title: "Information War End",
+    },
+    {
+      component: <GarbageInGarbageOutSlide />,
+      title: "Garbage In Garbage Out",
+    },
+    { component: <CommonEnemySlide />, title: "Common Enemy" },
+    {
+      component: <JusticeVsEvilSlide />,
+      title: "Justice VS Evil",
+    },
+        {
+      component: <BackToBasicsSlide />,
+      title: "Back to Basics",
+    },
+    {
+      component: <WisdomBattleSlide />,
+      title: "Wisdom Battle Slide",
+    },
+    { component: <KeyMessage />, title: "Key Message" },
+    {
+      component: <ConclusionPreludeExpand />,
+      title: "Conclusion Prelude Expand",
+    },
+    { component: <ThankYou />, title: "Thank You" },
   ];
 
   const totalSlides = slides.length;
@@ -166,7 +302,7 @@ export default function App() {
   const handleClick = (e: React.MouseEvent) => {
     const clickX = e.clientX;
     const windowWidth = window.innerWidth;
-    
+
     // 左1/4をクリックしたら前へ、それ以外は次へ
     if (clickX < windowWidth / 4) {
       prevSlide();
@@ -178,39 +314,44 @@ export default function App() {
   // キーボード操作
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'Enter') {
+      if (
+        e.key === "ArrowRight" ||
+        e.key === " " ||
+        e.key === "Enter"
+      ) {
         e.preventDefault();
         nextSlide();
-      } else if (e.key === 'ArrowLeft') {
+      } else if (e.key === "ArrowLeft") {
         e.preventDefault();
         prevSlide();
-      } else if (e.key === 'Home') {
+      } else if (e.key === "Home") {
         e.preventDefault();
         setCurrentSlide(0);
-      } else if (e.key === 'End') {
+      } else if (e.key === "End") {
         e.preventDefault();
         setCurrentSlide(totalSlides - 1);
       }
     };
 
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    window.addEventListener("keydown", handleKeyDown);
+    return () =>
+      window.removeEventListener("keydown", handleKeyDown);
   }, [currentSlide, totalSlides]);
 
   // スクロールを完全に無効化
   useEffect(() => {
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
     return () => {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = "auto";
     };
   }, []);
 
   return (
-    <div 
+    <div
       className="h-screen w-screen overflow-hidden bg-white cursor-pointer relative"
       onClick={handleClick}
     >
-      {/* 在のスライドを表示 */}
+      {/* 現在のスライドを表示 */}
       <div className="h-full w-full">
         {slides[currentSlide].component}
       </div>
@@ -229,7 +370,7 @@ export default function App() {
         </button>
       )}
 
-      {/* ナビゲーョンボタン（右） */}
+      {/* ナビゲーションボタン（右） */}
       {currentSlide < totalSlides - 1 && (
         <button
           onClick={(e) => {
@@ -255,10 +396,10 @@ export default function App() {
               }}
               className={`h-2 rounded-full transition-all duration-300 ${
                 index === currentSlide
-                  ? 'bg-[#FCCE00] w-8'
-                  : 'bg-white/50 hover:bg-white/70 w-2'
+                  ? "bg-[#FCCE00] w-8"
+                  : "bg-white/50 hover:bg-white/70 w-2"
               }`}
-              aria-label={`スライ ${index + 1} へ移動`}
+              aria-label={`スライド${index + 1}へ移動`}
             />
           ))}
         </div>

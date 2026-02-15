@@ -4,25 +4,22 @@ export function Survey() {
 
   return (
     <section className="h-screen w-screen bg-black flex items-center justify-center px-6">
-      <div className="text-center space-y-10">
-
-        {/* 上の案内テキスト */}
-        <div className="text-white leading-tight">
-          <h1 className="text-6xl md:text-7xl font-black tracking-wide">
-             アンケートのお願い
-          </h1>
-          {/* <h2 className="text-5xl md:text-6xl font-black mt-4">
-            アンケートのお願い
-          </h2> */}
-        </div>
+      <div className="text-center space-y-6">
+   
 
         {/* QRコード枠 */}
-        <div className="bg-white p-8 rounded-3xl shadow-2xl inline-block">
+        <div className="bg-white p-2 rounded-3xl shadow-2xl inline-block">
           <img
             src={qrUrl}
             alt="QR Code"
-            className="w-80 h-80 md:w-[520px] md:h-[520px] object-contain"
+            className="w-100 h-100 md:w-[480px] md:h-[480px] object-contain"
           />
+        </div>
+            {/* 上の案内テキスト */}
+        <div className="text-white leading-tight">
+          <h1 className="text-6xl font-extrabold text-white">
+             アンケートのお願い
+          </h1>
         </div>
       </div>
     </section>

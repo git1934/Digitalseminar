@@ -1,10 +1,9 @@
-import { Briefcase, Award, BookOpen, Linkedin, Mail } from 'lucide-react';
+import { Briefcase, Award, BookOpen } from 'lucide-react';
 
 export function Introduction() {
   const expertise = [
     'データ分析・可視化',
-    '機械学習モデル構築',
-    'ビジネス戦略立案',
+    'AI活用・機械学習',
     'デジタルトランスフォーメーション',
   ];
 
@@ -17,19 +16,20 @@ export function Introduction() {
     {
       icon: Award,
       title: 'プロジェクト実績',
-      description: '中小企業のDX支援プロジェクト50社以上',
+      description: '企業のDX支援プロジェクト50社以上',
     },
     {
       icon: BookOpen,
-      title: '専門資格',
-      description: '統計検定1級、データサイエンティスト検定',
+      title: '受賞',
+      description: '奈良市オープンデータコンテスト優秀賞など',
     },
   ];
 
   return (
-    <section className="h-screen overflow-hidden flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black px-12 py-16">
+    <section className="h-screen overflow-hidden flex items-center justify-center bg-black px-12 py-16">
       <div className="max-w-6xl mx-auto w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
           {/* Left side - Profile */}
           <div className="text-white">
             <div className="mb-4">
@@ -38,38 +38,29 @@ export function Introduction() {
               </span>
             </div>
             
-            <h1 className="text-6xl font-bold mb-4">
-              カトウ ヒロキ
+            {/* 名前 */}
+            <h1 className="text-6xl font-bold mb-2">
+              加藤 大喜
             </h1>
-            
-            <div className="text-3xl text-[#FCCE00] mb-8">
-              データサイエンティスト
+            <div className="text-xl text-gray-400 mb-6">
+              （カトウヒロキ）
             </div>
+            
+            {/* <div className="text-3xl text-[#FCCE00] mb-8">
+              データサイエンティスト
+            </div> */}
+<div className="text-2xl text-[#FCCE00] mb-8 font-semibold">
+  スペシャリスト:データサイエンティスト
+</div>
 
+            
             <p className="text-2xl text-gray-300 leading-relaxed mb-8">
               データドリブンな意思決定とデジタルトランスフォーメーションを通じて、
-              中小企業の成長を支援しています。統計学と機械学習の専門知識を活かし、
+              お客様の企業成長を支援しています。データサイエンスの専門知識を活かし、
               ビジネス課題の解決に取り組んでいます。
             </p>
 
-            <div className="flex gap-4 mb-8">
-              <a
-                href="#"
-                className="w-12 h-12 bg-white/10 hover:bg-[#FCCE00]/20 rounded-full flex items-center justify-center transition-colors border border-white/20"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-6 h-6" />
-              </a>
-              <a
-                href="#"
-                className="w-12 h-12 bg-white/10 hover:bg-[#FCCE00]/20 rounded-full flex items-center justify-center transition-colors border border-white/20"
-                aria-label="Email"
-              >
-                <Mail className="w-6 h-6" />
-              </a>
-            </div>
-
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+            <div className="bg-white/10 rounded-xl p-6 border border-white/20">
               <h3 className="text-2xl font-bold mb-4">専門領域</h3>
               <div className="flex flex-wrap gap-3">
                 {expertise.map((skill, index) => (
@@ -91,7 +82,7 @@ export function Introduction() {
               return (
                 <div
                   key={index}
-                  className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-colors"
+                  className="bg-white/10 rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-colors"
                 >
                   <div className="flex items-start gap-6">
                     <div className="flex-shrink-0 w-16 h-16 bg-[#FCCE00] rounded-xl flex items-center justify-center">
@@ -110,15 +101,16 @@ export function Introduction() {
               );
             })}
 
-            <div className="bg-gradient-to-r from-[#FCCE00] to-[#e6bc00] rounded-xl p-8 text-black text-center shadow-2xl">
+            {/* Mission */}
+            <div className="bg-[#FCCE00] rounded-xl p-8 text-black text-center shadow-2xl">
               <div className="text-sm font-semibold uppercase tracking-wider mb-3">
                 Mission
               </div>
               <p className="text-2xl font-bold leading-relaxed">
-                データの力で、中小企業の<br />
-                未来を切り拓く
+                データ活用で地域の企業支援
               </p>
             </div>
+
           </div>
         </div>
       </div>

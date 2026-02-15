@@ -6,7 +6,7 @@ export function ExitKPIExamples() {
       <div className="max-w-[1600px] w-full flex flex-col gap-10">
         {/* Header */}
         <div className="text-center">
-          <h1 className="text-8xl font-black text-black tracking-tight">
+         <h1 className="text-6xl font-black text-black mb-4 leading-tight">
             撤退KPIを決めるメリット
           </h1>
         </div>

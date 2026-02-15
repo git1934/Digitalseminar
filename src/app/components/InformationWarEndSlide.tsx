@@ -56,7 +56,7 @@ export function InformationWarEndSlide() {
 
       {/* メインテキスト */}
       <h1 className="relative z-10 text-white font-black text-[8rem] md:text-[10rem] tracking-tight text-center leading-tight">
-        単純な情報戦の<br />終わり
+        情報量戦略<br />の終わり
       </h1>
 
     </section>

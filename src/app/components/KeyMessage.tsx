@@ -1,7 +1,6 @@
-import React, { useMemo } from 'react';
+import { useMemo } from "react";
 
 export function KeyMessage() {
-  // 元のラインデータ（delayはランダムに置き換えるので、ここでは何でもOKです）
   const baseLines = [
     { style: "top-[10%] left-[-10%] rotate-[15deg] w-[3500px] h-[10px]", color: "#FCCE00" },
     { style: "top-[40%] left-[-20%] rotate-[5deg] w-[3500px] h-[2px]", color: "#FCCE00" },
@@ -35,25 +34,38 @@ export function KeyMessage() {
     { style: "top-[85%] left-[-14%] rotate-[165deg] w-[4000px] h-[30px]", color: "#0072BC" },
   ];
 
-  // 0.2秒から10秒の間でランダムなdelayを生成
   const lines = useMemo(() => {
     return baseLines.map(line => ({
       ...line,
-      // Math.random() * (max - min) + min
       delay: Math.random() * (10 - 0.2) + 0.2
     }));
   }, []);
 
   return (
     <section className="relative h-screen w-screen overflow-hidden flex items-center justify-center bg-black">
-      
-      {/* 背景ライン群 */}
+
+      {/* ===== 背景テキスト：BARANCE ===== */}
+      <div className="absolute top-10  flex items-center justify-center pointer-events-none">
+        <span
+          className="
+            text-[10rem] md:text-[14rem] lg:text-[18rem]
+            font-black tracking-tight
+            text-gray-400/10
+            select-none
+            whitespace-nowrap
+          "
+        >
+          BALANCE
+        </span>
+      </div>
+
+      {/* ===== 背景ライン群 ===== */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {lines.map((line, index) => (
           <div
             key={index}
             className={`absolute opacity-0 animate-webLineSlow ${line.style}`}
-            style={{ 
+            style={{
               animationDelay: `${line.delay}s`,
               backgroundColor: line.color
             }}
@@ -61,7 +73,7 @@ export function KeyMessage() {
         ))}
       </div>
 
-      {/* メイン文字 */}
+      {/* ===== メイン文字 ===== */}
       <div className="relative z-10 text-center">
         <h1
           className="
@@ -80,7 +92,7 @@ export function KeyMessage() {
         </h1>
       </div>
 
-      {/* アニメーション定義 */}
+      {/* ===== アニメーション定義 ===== */}
       <style>{`
         @keyframes webLineSlow {
           0% {
