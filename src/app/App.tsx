@@ -6,6 +6,8 @@ import { NewspaperSlide } from "./components/NewspaperSlide";
 import { POSExpertise } from "./components/POSExpertise";
 import { ExperientialSeminarSlide } from "./components/ExperientialSeminarSlide";
 import { Survey } from "./components/Survey";
+import { Chart7 } from "./components/Chart7";
+import { RespondentCountSlide } from "./components/RespondentCountSlide";
 import { ThreePoints } from "./components/ThreePoints";
 import { Chapter1 } from "./components/Chapter1";
 import { Chart1 } from "./components/Chart1";
@@ -64,7 +66,8 @@ import { ThankYou } from "./components/ThankYou";
 import { IntroductionIsNotGoalSlide } from "./components/IntroductionIsNotGoalSlide";
 import { LinksComparisonSlide } from "./components/LinksComparisonSlide";
 import { TwoPillarsSlide } from "./components/TwoPillarsSlide";
-import { N } from "./components/N";
+import { ThreeInteractionSlide } from "./components/ThreeInteractionSlide";
+import { EnjoyForEveryoneSlide } from "./components/EnjoyForEveryoneSlide";
 
 export default function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -73,12 +76,17 @@ export default function App() {
   const slides = [
     { component: <Hero />, title: 'Hero' },
     { component: <Introduction />, title: 'Introduction' },
-    { component: <LinksComparisonSlide />, title: 'Links Comparison' },
-    { component: <TwoPillarsSlide />, title: 'Two Pillars' },
     { component: <NewspaperSlide />, title: 'Newspaper' },
+    { component: <LinksComparisonSlide />, title: 'Links Comparison' },
     { component: <POSExpertise />, title: 'POS Expertise' },
+    { component: <TwoPillarsSlide />, title: 'Two Pillars' },
     { component: <ExperientialSeminarSlide />, title: 'Experiential Seminar' },
+    { component: <ThreeInteractionSlide />, title: 'Three Interaction' },
     { component: <Survey />, title: 'Survey' },
+    { component: <RespondentCountSlide />, title: 'Respondent Count' },
+    { component: <ConclusionPreludeWide />, title: 'Conclusion Prelude Wide' },
+    { component: <Chart7 />, title: 'Chart 7' },
+    { component: <EnjoyForEveryoneSlide />, title: 'Enjoy For Everyone' },
     { component: <ThreePoints />, title: 'Three Points' },
     { component: <Chapter1 />, title: 'Chapter 1' },
     { component: <Chart1 />, title: 'Chart 1' },
@@ -136,8 +144,6 @@ export default function App() {
     { component: <KeyMessage />, title: 'Key Message' },
     { component: <ConclusionPreludeExpand />, title: 'Conclusion Prelude Expand' },
     { component: <ThankYou />, title: 'Thank You' },
-        { component: <N />, title: 'N' },
-
   ];
 
   const totalSlides = slides.length;

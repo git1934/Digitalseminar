@@ -8,11 +8,9 @@ export function LinksComparisonSlide() {
         {/* タイトル */}
         <div className="text-white text-center mb-16 leading-tight">
           <h1 className="text-5xl md:text-6xl font-black tracking-wide">
-            お客さまのDXを加速させる
+     共創ラボ <span className="text-[#FCCE00]">LINKSPARK</span>
           </h1>
-          <h2 className="text-4xl md:text-5xl font-bold mt-4 tracking-wide">
-            共創ラボ <span className="text-[#FCCE00]">LINKSPARK</span>
-          </h2>
+
         </div>
 
         {/* 画像エリア */}

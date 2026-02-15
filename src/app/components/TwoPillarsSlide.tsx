@@ -42,7 +42,7 @@ export function TwoPillarsSlide() {
               {["売上管理","POS活用","販促物作成","商圏分析"].map((item)=>(
                 <div key={item} className="flex items-center gap-3">
                   <div className="w-3 h-3 bg-[#ff9500] rounded-full" />
-                  <p className="text-2xl text-white">{item}</p>
+                  <p className="text-3xl text-white">{item}</p>
                 </div>
               ))}
             </div>

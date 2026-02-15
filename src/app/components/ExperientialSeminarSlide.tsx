@@ -11,14 +11,14 @@ export function ExperientialSeminarSlide() {
       {/* メインテキスト */}
       <div className="relative z-10 text-center px-16">
         <h1 className="text-[#FCCE00] font-black text-[9rem] md:text-[11rem] tracking-tight leading-none">
-          体験型
+          参加型
           <br />
           セミナー
         </h1>
 
         {/* サブコピー */}
         <p className="mt-12 text-3xl text-white/70 font-bold tracking-wide">
-          聞くだけでは、終わらせない
+          最後は拍手で締めくくる45分
         </p>
       </div>
 
