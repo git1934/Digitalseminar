@@ -38,8 +38,8 @@ export function DifferentiationContent() {
                 <Rocket className="w-7 h-7 text-[#FCCE00]" />
               </div>
               <div className="flex-1">
-                <p className="text-2xl leading-relaxed text-gray-700">
-                  DXツールや生成AIの登場により、デジタル活用のハードルは一気に下がりました。<br/>
+                <p className="text-3xl leading-relaxed text-gray-700">
+                  DXツールや生成AIの登場により、デジタル活用のハードルは一気に下がりました。
                   今では、高機能なツールを誰でも同じような価格で使える時代です。
                 </p>
               </div>
@@ -51,9 +51,9 @@ export function DifferentiationContent() {
                 <Bot className="w-7 h-7 text-gray-600" />
               </div>
               <div className="flex-1">
-                <p className="text-2xl leading-relaxed text-gray-700">
-                  しかし、ツールに依存している限り、どのモデルを使っても結果は似通ってきます。<br/>
-                  ChatGPTでも他社ツールでも、<strong className="text-black font-bold bg-[#FCCE00]/20 px-1">ツールそのものでは経営が差別化しづらくなっています。</strong>
+                <p className="text-3xl leading-relaxed text-gray-700">
+                  しかし、ツールに依存している限り、どのモデルを使っても結果は似通ってきます。
+                  ChatGPTでもGeminiでも、<strong className="text-black font-bold bg-[#FCCE00]/20 px-1">ツールそのものでは経営が差別化しづらくなっています。</strong>
                 </p>
               </div>
             </div>
@@ -65,7 +65,7 @@ export function DifferentiationContent() {
                   <AlertTriangle className="w-6 h-6 text-[#FCCE00]" />
                 </div>
                 <div className="flex-1">
-                  <p className="text-2xl text-white font-medium leading-relaxed">
+                  <p className="text-3xl text-white font-medium leading-relaxed">
                     この結果、多くの企業が他社と同じような取り組みに陥っています。
                   </p>
                 </div>

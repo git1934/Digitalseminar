@@ -20,12 +20,12 @@ export function WhyDifferentiation() {
   ];
 
   return (
-    // 全体のパディングを調整（上部を少し下げ、下部をしっかり空ける）
-    <section className="h-screen overflow-hidden flex items-start justify-center bg-white px-16 pt-16 pb-32">
+    // ✅ 縦中央配置に変更
+    <section className="h-screen flex items-center justify-center bg-white px-16">
       
       <div className="max-w-[1200px] w-full flex flex-col">
         
-        {/* Header: マージンを少し縮小 */}
+        {/* Header */}
         <div className="mb-10 text-center">
           <div className="flex items-center justify-center gap-3 mb-2">
             {/* <Target className="w-10 h-10 text-[#FCCE00]" /> */}
@@ -35,26 +35,23 @@ export function WhyDifferentiation() {
           </h1>
         </div>
 
-        {/* Reasons: ボックス間の隙間を space-y-4 に微減 */}
-        <div className="space-y-6">
+        {/* Reasons */}
+        <div className="space-y-8">
           {reasons.map((reason, index) => (
             <div
               key={index}
-              // p-8 から p-5 に縮小。境界線も少し細く(border-2)して圧迫感を軽減
               className="bg-white border-2 border-black rounded-xl p-6 shadow-lg"
             >
               <div className="flex items-center gap-5">
-                {/* Number Badge: サイズを少しコンパクトに */}
-                <div className="flex-shrink-0 w-16 h-16 bg-[#FCCE00] text-black rounded-full flex items-center justify-center">
+                <div className="flex-shrink-0 w-16 h-20 bg-[#FCCE00] text-black rounded-full flex items-center justify-center">
                   <span className="text-3xl font-black">{reason.number}</span>
                 </div>
 
-                {/* Content */}
                 <div className="flex-1">
-                  <h2 className="text-4xl font-black text-black mb-1 leading-tight">
+                  <h2 className="text-5xl font-black text-black mb-1 leading-tight">
                     {reason.title}
                   </h2>
-                  <p className="text-2xl text-gray-700 leading-snug">
+                  <p className="text-3xl text-gray-700 leading-snug">
                     {reason.description}
                   </p>
                 </div>

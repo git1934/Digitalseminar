@@ -17,7 +17,7 @@ export function StrategyComparison() {
       diffTitle: '体験を設計',
     },
     {
-      label: '強みの源泉',
+      label: '強み',
       focusIcon: Zap,
       focusTitle: '自動化・最適化',
       diffIcon: Sparkles,
@@ -28,7 +28,7 @@ export function StrategyComparison() {
   return (
     <section className="h-screen flex items-center justify-center bg-white overflow-hidden">
       {/* 下に余白を残すため pb を大きめに */}
-      <div className="w-full max-w-[1400px] px-16 pt-16 pb-32 flex flex-col justify-center">
+      <div className="w-full max-w-[1600px] px-16 pt-16 pb-32 flex flex-col justify-center">
         {/* Title */}
         <h1 className="text-7xl font-black mb-16 leading-tight">
           集中戦略と差別化戦略
@@ -40,10 +40,10 @@ export function StrategyComparison() {
 <div className="grid grid-cols-[220px_1fr_1fr]">
   <div className="p-6 bg-white"></div>
 
-  <div className="p-6 text-3xl font-black text-blue-700 bg-blue-50">
+  <div className="p-6 text-4xl font-black text-blue-700 bg-blue-50">
               集中戦略（DX・AIが有用）
             </div>
-       <div className="p-6 text-3xl font-black text-[#B88900] bg-[#FCCE00]/20">
+       <div className="p-6 text-4xl font-black text-[#B88900] bg-[#FCCE00]/20">
               差別化戦略（アイデアが価値）
             </div>
           </div>
@@ -61,7 +61,7 @@ export function StrategyComparison() {
                 {/* Label */}
           {/* Label */}
 <div className="p-8 bg-gray-900 flex items-center">
-  <span className="text-2xl font-black text-white/90 tracking-wide">
+  <span className="text-4xl font-black text-white/90 tracking-wide">
     {row.label}
   </span>
 </div>
@@ -71,7 +71,7 @@ export function StrategyComparison() {
   <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0">
     <FocusIcon className="w-8 h-8 text-white" />
   </div>
-  <h3 className="text-3xl font-black text-blue-900">
+  <h3 className="text-4xl font-black text-blue-900">
     {row.focusTitle}
   </h3>
 </div>
@@ -82,7 +82,7 @@ export function StrategyComparison() {
   <div className="w-16 h-16 bg-[#FCCE00] rounded-2xl flex items-center justify-center flex-shrink-0">
     <DiffIcon className="w-8 h-8 text-black" />
   </div>
-  <h3 className="text-3xl font-black text-[#B88900]">
+  <h3 className="text-4xl font-black text-[#B88900]">
     {row.diffTitle}
   </h3>
 </div>

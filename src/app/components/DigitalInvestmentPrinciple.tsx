@@ -35,10 +35,10 @@ export function DigitalInvestmentPrinciple() {
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-6 h-6 text-black flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-xl font-bold text-black leading-snug">
+                    <p className="text-2xl font-bold text-black leading-snug">
                       小さく始めて素早く検証
                     </p>
-                    <p className="text-base text-gray-700 leading-snug">
+                    <p className="text-xl text-gray-700 leading-snug">
                       巨大なシステムを一括導入するのではなく、小さなプロジェクトからスタートし、効果を確認しながら拡大する。
                     </p>
                   </div>
@@ -49,10 +49,10 @@ export function DigitalInvestmentPrinciple() {
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-6 h-6 text-black flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-xl font-bold text-black leading-snug">
+                    <p className="text-2xl font-bold text-black leading-snug">
                       損切りルールの明確化
                     </p>
-                    <p className="text-base text-gray-700 leading-snug">
+                    <p className="text-xl text-gray-700 leading-snug">
                       予期せぬ成果が出ない場合に、早い段階で撤退または修正するルールを設ける。
                     </p>
                   </div>
@@ -63,10 +63,10 @@ export function DigitalInvestmentPrinciple() {
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-6 h-6 text-black flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-xl font-bold text-black leading-snug">
+                    <p className="text-2xl font-bold text-black leading-snug">
                       ROI測定と早期見極め
                     </p>
-                    <p className="text-base text-gray-700 leading-snug">
+                    <p className="text-xl text-gray-700 leading-snug">
                       デジタル投資額に対し、削減コストや売上増などのメリットを定量的に測定し、不採算な投資を早期に特定する。{" "}
                     </p>
                   </div>
@@ -103,10 +103,10 @@ export function DigitalInvestmentPrinciple() {
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-6 h-6 text-black flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-xl font-bold text-black leading-snug">
+                    <p className="text-2xl font-bold text-black leading-snug">
                       データ・AI活用
                     </p>
-                    <p className="text-base text-gray-700 leading-snug">
+                    <p className="text-xl text-gray-700 leading-snug">
                       データやAIを活用し、業務効率化だけでなく、新しい顧客体験や商品、サービスを提供して売上を最大化する。
                     </p>
                   </div>
@@ -117,10 +117,10 @@ export function DigitalInvestmentPrinciple() {
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-6 h-6 text-black flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-xl font-bold text-black leading-snug">
+                    <p className="text-2xl font-bold text-black leading-snug">
                       差別化・競争力強化
                     </p>
-                    <p className="text-base text-gray-700 leading-snug">
+                    <p className="text-xl text-gray-700 leading-snug">
                       デジタルを駆使し、独自のバリューを生み出すことで、他社と差別化を図る。
                     </p>
                   </div>
@@ -131,10 +131,10 @@ export function DigitalInvestmentPrinciple() {
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-6 h-6 text-black flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-xl font-bold text-black leading-snug">
+                    <p className="text-2xl font-bold text-black leading-snug">
                       スケール前提の設計
                     </p>
-                    <p className="text-base text-gray-700 leading-snug">
+                    <p className="text-xl text-gray-700 leading-snug">
                       デジタル技術の強みである、低コストでの多展開（密度・規模の経済）を意識したビジネスモデルを構築する。
                     </p>
                   </div>
