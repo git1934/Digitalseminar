@@ -79,7 +79,7 @@ export function KeyMessage() {
           className="
             text-[180px]
             md:text-[220px]
-            lg:text-[280px]
+            lg:text-[240px]
             font-black
             tracking-wider
             text-white

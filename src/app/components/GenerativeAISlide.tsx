@@ -56,8 +56,8 @@ export function GenerativeAISlide() {
       </div>
 
       {/* メインテキスト */}
-      <h1 className="relative z-10 text-white font-black text-[9rem] md:text-[11rem] tracking-tight">
-        生成AIの台頭
+      <h1 className="relative z-10 text-[#0072BC] font-black text-[9rem] md:text-[11rem] tracking-tight">
+        生成AIの浸透
       </h1>
 
     </section>

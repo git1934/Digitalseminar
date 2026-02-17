@@ -72,6 +72,8 @@ import { TwoPillarsSlide } from "./components/TwoPillarsSlide";
 import { ThreeInteractionSlide } from "./components/ThreeInteractionSlide";
 import { EnjoyForEveryoneSlide } from "./components/EnjoyForEveryoneSlide";
 import { GarbageInGarbageOutSlide } from "./components/GarbageInGarbageOutSlide";
+import { CreatorCurseSlide } from "./components/CreatorCurseSlide";
+import { FailureSuccessSlide } from "./components/FailureSuccessSlide";
 
 export default function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -236,18 +238,14 @@ export default function App() {
       title: "Digital Investment Principle",
     },
     {
-      component: <BalanceSenseSlide />,
-      title: "Balance Sense",
-    },
-    {
       component: <ExitIsLossCutting />,
       title: "Exit Is Loss Cutting",
     },
-    { component: <TradeOffSlide />, title: "Trade Off" },
     {
-      component: <ActionAttitudeSlide />,
-      title: "Action Attitude",
+      component: <CreatorCurseSlide />,
+      title: "Creator Curse",
     },
+
     {
       component: <GenerativeAISlide />,
       title: "Generative AI",
@@ -258,27 +256,39 @@ export default function App() {
       title: "Information War End",
     },
     {
+      component: <WisdomBattleSlide />,
+      title: "Wisdom Battle Slide",
+    },
+    { component: <TradeOffSlide />, title: "Trade Off" },
+
+    {
+      component: <ActionAttitudeSlide />,
+      title: "Action Attitude",
+    },
+    {
       component: <GarbageInGarbageOutSlide />,
       title: "Garbage In Garbage Out",
     },
+
     { component: <CommonEnemySlide />, title: "Common Enemy" },
+    // {      component: <JusticeVsEvilSlide />,      title: "Justice VS Evil",    },
     {
-      component: <JusticeVsEvilSlide />,
-      title: "Justice VS Evil",
+      component: <FailureSuccessSlide />,
+      title: "Failure Success",
     },
-        {
+    {
       component: <BackToBasicsSlide />,
       title: "Back to Basics",
     },
     {
-      component: <WisdomBattleSlide />,
-      title: "Wisdom Battle Slide",
+      component: <BalanceSenseSlide />,
+      title: "Balance Sense",
     },
-    { component: <KeyMessage />, title: "Key Message" },
     {
       component: <ConclusionPreludeExpand />,
       title: "Conclusion Prelude Expand",
     },
+    { component: <KeyMessage />, title: "Key Message" },
     { component: <ThankYou />, title: "Thank You" },
   ];
 
@@ -311,7 +321,7 @@ export default function App() {
     }
   };
 
-  // キーボード操作
+  // キーボード操���
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (

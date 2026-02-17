@@ -27,7 +27,7 @@ export function NewspaperSlide() {
       )}
 
       {/* 画像表示 */}
-      <div className="w-full h-full flex items-center justify-center p-8">
+      <div className="w-full h-full flex items-center justify-center p-8 mb-10">
         <ImageWithFallback
           src="https://raw.githubusercontent.com/git1934/seminar_image/main/npaper.png"
           alt="Newspaper"

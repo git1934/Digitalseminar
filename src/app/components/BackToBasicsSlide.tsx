@@ -16,7 +16,7 @@ export function BackToBasicsSlide() {
 
       {/* 前面の日本語テキスト */}
       <div className="relative z-10 text-center px-12">
-        <h1 className="text-2xl md:text-8xl font-extrabold text-white tracking-wide leading-tight">
+        <h1 className="text-8xl md:text-8xl font-extrabold text-[#FCCE00] tracking-wide leading-tight">
           基本に返る
         </h1>
 

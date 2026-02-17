@@ -139,7 +139,7 @@ export function InvisibleReasonSlide() {
       </div>
 
       {/* メインテキスト */}
-      <h1 className="relative z-10 text-white font-black text-[4rem] md:text-[8rem] tracking-tight">
+      <h1 className="relative z-10 text-white font-black text-[4rem] md:text-[10rem] tracking-tight">
         アドレナリン<br/>ジャンキー
       </h1>
     </section>
