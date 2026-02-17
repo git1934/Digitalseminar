@@ -16,7 +16,7 @@ export function Introduction() {
     {
       icon: Award,
       title: 'プロジェクト実績',
-      description: '企業のDX支援プロジェクト50社以上',
+      description: '企業のDX支援プロジェクト10社以上',
     },
     {
       icon: BookOpen,
