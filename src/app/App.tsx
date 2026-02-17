@@ -74,6 +74,7 @@ import { EnjoyForEveryoneSlide } from "./components/EnjoyForEveryoneSlide";
 import { GarbageInGarbageOutSlide } from "./components/GarbageInGarbageOutSlide";
 import { CreatorCurseSlide } from "./components/CreatorCurseSlide";
 import { FailureSuccessSlide } from "./components/FailureSuccessSlide";
+import { ThreePrinciplesSlide } from "./components/ThreePrinciplesSlide";
 
 export default function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -276,6 +277,7 @@ export default function App() {
       component: <FailureSuccessSlide />,
       title: "Failure Success",
     },
+    { component: <ThreePrinciplesSlide />, title: "Three Principles" },
     {
       component: <BackToBasicsSlide />,
       title: "Back to Basics",
@@ -290,6 +292,7 @@ export default function App() {
     },
     { component: <KeyMessage />, title: "Key Message" },
     { component: <ThankYou />, title: "Thank You" },
+
   ];
 
   const totalSlides = slides.length;
@@ -321,7 +324,7 @@ export default function App() {
     }
   };
 
-  // キーボード操���
+  // キーボード操
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (
