@@ -1,7 +1,6 @@
 export function DramaticPause() {
   return (
     <section className="h-screen w-screen bg-black flex items-center justify-center overflow-hidden relative">
-
       {/* 背景テキスト：Value Proposition */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <span
@@ -13,13 +12,18 @@ export function DramaticPause() {
             whitespace-nowrap
           "
         >
-          Value<br/>Proposition
+          Value
+          <br />
+          Proposition
         </span>
       </div>
 
       {/* 背景①：斜めストライプ */}
       <div className="absolute inset-0 opacity-[0.08] pointer-events-none">
-        <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          className="w-full h-full"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           {Array.from({ length: 12 }).map((_, i) => (
             <line
               key={i}
@@ -42,7 +46,7 @@ export function DramaticPause() {
       <h1
         className="
           relative z-10
-          text-7xl md:text-8xl lg:text-9xl
+            text-[6rem] md:text-[8rem] lg:text-[11rem]
           font-black text-white text-center
           tracking-wider px-8
         "

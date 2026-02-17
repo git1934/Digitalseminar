@@ -12,9 +12,9 @@ export function StrategyComparison() {
     {
       label: '重視する価値',
       focusIcon: Settings,
-      focusTitle: '効率を追求',
+      focusTitle: '業務効率を追求',
       diffIcon: Heart,
-      diffTitle: '体験を設計',
+      diffTitle: '顧客体験を設計',
     },
     {
       label: '強み',
