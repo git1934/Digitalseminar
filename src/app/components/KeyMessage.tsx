@@ -18,6 +18,9 @@ export function KeyMessage() {
     { style: "top-[35%] right-[-15%] -rotate-[20deg] w-[3500px] h-[30px]", color: "#0072BC" },
     { style: "bottom-[25%] right-[-45%] -rotate-[15deg] w-[3500px] h-[8px]", color: "#0072BC" },
     { style: "top-[45%] right-[-30%] -rotate-[18deg] w-[3500px] h-[10px]", color: "#0072BC" },
+    { style: "top-[70%] right-[-12%] -rotate-[25deg] w-[3500px] h-[2px]", color: "#FCCE00" },
+    { style: "bottom-[45%] right-[-48%] -rotate-[9deg] w-[3500px] h-[10px]", color: "#FCCE00" },
+    { style: "top-[12%] left-[-22%] rotate-[20deg] w-[3500px] h-[10px]", color: "#0072BC" },
     { style: "bottom-[35%] right-[-18%] -rotate-[8deg] w-[3500px] h-[2px]", color: "#0072BC" },
     { style: "top-[60%] left-[-20%] rotate-[155deg] w-[4000px] h-[50px]", color: "#0072BC" },
     { style: "bottom-[45%] right-[-25%] -rotate-[7deg] w-[3500px] h-[8px]", color: "#0072BC" },
@@ -48,14 +51,14 @@ export function KeyMessage() {
       <div className="absolute top-10  flex items-center justify-center pointer-events-none">
         <span
           className="
-            text-[10rem] md:text-[14rem] lg:text-[18rem]
+            text-[4rem] md:text-[6rem] lg:text-[10rem]
             font-black tracking-tight
             text-gray-400/10
             select-none
             whitespace-nowrap
           "
         >
-          BALANCE
+          DIGITAL STRATEGY
         </span>
       </div>
 

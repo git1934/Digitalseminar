@@ -2,10 +2,17 @@ export function CommonEnemySlide() {
   return (
     <section className="h-screen w-screen bg-black flex items-center justify-center overflow-hidden relative">
 
-      {/* ===== 背景装飾（別パターン：左右から中央へ収束するライン） ===== */}
+      {/* ===== 背景透かしタイポ ===== */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <span className="text-red-500/10 font-black text-[13rem] md:text-[17rem] tracking-tight select-none text-center leading-none">
+          COMMON<br />ENEMY
+        </span>
+      </div>
+
+      {/* ===== 背景装飾（左右から中央へ収束） ===== */}
       <div className="absolute inset-0 opacity-15 pointer-events-none">
 
-        {/* 左側：分断ライン */}
+        {/* 左側：収束ライン */}
         <svg className="absolute left-0 top-0 h-full w-1/2" xmlns="http://www.w3.org/2000/svg">
           <line x1="0%" y1="10%" x2="100%" y2="50%" stroke="#FCCE00" strokeWidth="2" />
           <line x1="0%" y1="30%" x2="100%" y2="50%" stroke="#FCCE00" strokeWidth="1.5" />
@@ -14,7 +21,7 @@ export function CommonEnemySlide() {
           <line x1="0%" y1="90%" x2="100%" y2="50%" stroke="#FCCE00" strokeWidth="2" />
         </svg>
 
-        {/* 右側：分断ライン */}
+        {/* 右側：収束ライン */}
         <svg className="absolute right-0 top-0 h-full w-1/2" xmlns="http://www.w3.org/2000/svg">
           <line x1="100%" y1="10%" x2="0%" y2="50%" stroke="#FCCE00" strokeWidth="2" />
           <line x1="100%" y1="30%" x2="0%" y2="50%" stroke="#FCCE00" strokeWidth="1.5" />

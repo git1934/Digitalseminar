@@ -75,6 +75,7 @@ import { GarbageInGarbageOutSlide } from "./components/GarbageInGarbageOutSlide"
 import { CreatorCurseSlide } from "./components/CreatorCurseSlide";
 import { FailureSuccessSlide } from "./components/FailureSuccessSlide";
 import { ThreePrinciplesSlide } from "./components/ThreePrinciplesSlide";
+import { KeyPointsSlide } from "./components/KeyPointsSlide";
 
 export default function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -270,22 +271,23 @@ export default function App() {
       component: <GarbageInGarbageOutSlide />,
       title: "Garbage In Garbage Out",
     },
-
+  {
+      component: <BalanceSenseSlide />,
+      title: "Balance Sense",
+    },
     { component: <CommonEnemySlide />, title: "Common Enemy" },
     // {      component: <JusticeVsEvilSlide />,      title: "Justice VS Evil",    },
     {
       component: <FailureSuccessSlide />,
       title: "Failure Success",
     },
+    { component: <KeyPointsSlide />, title: "Key Points" },
     { component: <ThreePrinciplesSlide />, title: "Three Principles" },
     {
       component: <BackToBasicsSlide />,
       title: "Back to Basics",
     },
-    {
-      component: <BalanceSenseSlide />,
-      title: "Balance Sense",
-    },
+  
     {
       component: <ConclusionPreludeExpand />,
       title: "Conclusion Prelude Expand",

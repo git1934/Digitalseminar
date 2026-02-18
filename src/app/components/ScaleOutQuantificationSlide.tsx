@@ -15,14 +15,14 @@ export function ScaleOutQuantificationSlide() {
         />
       </div>
 
-      {/* 背景スター：イエロー（アクセント） */}
+      {/* ⭐ 背景スター：イエロー（ヨーヨー回転） */}
       <div className="absolute top-1/2 -left-56 -translate-y-1/2 opacity-25 pointer-events-none">
         <img
           src={starSvg}
           alt=""
           className="w-[520px] h-[520px] object-contain
                      hue-rotate-[20deg] saturate-150
-                     animate-[spin_240s_linear_infinite_reverse]"
+                     animate-[yoyoSpin_18s_ease-in-out_infinite]"
         />
       </div>
 
@@ -45,11 +45,41 @@ export function ScaleOutQuantificationSlide() {
           の定量化
         </h1>
 
-        {/* サブテキスト（語り用余白） */}
         <p className="mt-10 text-3xl text-white/60 font-bold tracking-wide">
           手段ではなく、成果の拡張性を把握する
         </p>
       </div>
+
+      {/* ⭐ カスタムアニメーション */}
+      <style>
+        {`
+          @keyframes yoyoSpin {
+            0% {
+              transform: rotate(0deg);
+            }
+
+            20% {
+              transform: rotate(220deg); /* 速く回る */
+            }
+
+            40% {
+              transform: rotate(260deg); /* 減速 */
+            }
+
+            60% {
+              transform: rotate(40deg);  /* 逆方向へ戻る */
+            }
+
+            80% {
+              transform: rotate(-180deg); /* 加速逆回転 */
+            }
+
+            100% {
+              transform: rotate(0deg); /* 元に戻る */
+            }
+          }
+        `}
+      </style>
     </section>
   );
 }

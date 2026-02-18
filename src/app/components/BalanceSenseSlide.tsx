@@ -2,6 +2,13 @@ export function BalanceSenseSlide() {
   return (
     <section className="h-screen w-screen bg-black flex items-center justify-center overflow-hidden relative">
       
+      {/* 背景透かしタイポ */}
+      <div className="absolute top-5 left-20 flex items-center justify-center pointer-events-none">
+        <span className="text-orange-500/10 font-black text-[14rem] md:text-[18rem] tracking-tight select-none">
+          BALANCE
+        </span>
+      </div>
+
       {/* 背景：バランス・調整モチーフ */}
       <div className="absolute inset-0 opacity-12 pointer-events-none">
 
@@ -41,7 +48,7 @@ export function BalanceSenseSlide() {
           </svg>
         </div>
 
-        {/* 調整ライン（微差を表現） */}
+        {/* 調整ライン（微差） */}
         <div className="absolute inset-0">
           <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
             {[...Array(6)].map((_, i) => (
@@ -66,10 +73,13 @@ export function BalanceSenseSlide() {
         <div className="absolute bottom-0 right-0 w-24 h-24 border-r-2 border-b-2 border-[#FCCE00]" />
       </div>
 
-      {/* メインテキスト */}
-      <h1 className="relative z-10 text-white font-black text-[9rem] md:text-[11rem] tracking-tight">
-        バランス感覚
+      {/* メインテキスト（少し小さく） */}
+      <h1 className="relative z-10 text-white font-black text-[6rem] md:text-[rem] tracking-tight text-center px-20 leading-tight">
+        自転車を乗りこなすためには
+        <br />
+        走り続けなければならない
       </h1>
+
     </section>
   );
 }

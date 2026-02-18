@@ -2,6 +2,13 @@ export function TradeOffSlide() {
   return (
     <section className="relative h-screen w-screen bg-black overflow-hidden flex items-center justify-center">
 
+      {/* 背景透かしタイポ */}
+      <div className="absolute top-5 flex items-center justify-center pointer-events-none">
+        <span className="text-green-500/10 font-black text-[14rem] md:text-[16rem] tracking-tight select-none">
+          TRADE<br/>OFF
+        </span>
+      </div>
+
       {/* 背景の幾何学模様（断絶 × 破片） */}
       <div className="absolute inset-0 pointer-events-none opacity-15">
 
@@ -66,6 +73,7 @@ export function TradeOffSlide() {
           何かを捨てなければならない
         </p>
       </div>
+
     </section>
   );
 }

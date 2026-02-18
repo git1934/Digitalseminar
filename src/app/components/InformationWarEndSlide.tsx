@@ -2,10 +2,17 @@ export function InformationWarEndSlide() {
   return (
     <section className="relative h-screen w-screen bg-black overflow-hidden flex items-center justify-center">
 
-      {/* 背景の幾何学模様（崩壊するグリッド） */}
+      {/* ===== 背景透かしタイポ ===== */}
+      <div className="absolute top-10 left-10 flex items-center justify-center pointer-events-none">
+        <span className="text-yellow-500/10 font-black text-[14rem] md:text-[18rem] tracking-tight select-none text-center leading-none">
+          NEW ERA
+        </span>
+      </div>
+
+      {/* ===== 背景幾何（崩壊グリッド） ===== */}
       <div className="absolute inset-0 pointer-events-none opacity-15">
 
-        {/* 水平方向の断線グリッド */}
+        {/* 水平方向断線 */}
         <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
           {[...Array(14)].map((_, i) => (
             <line
@@ -21,7 +28,7 @@ export function InformationWarEndSlide() {
           ))}
         </svg>
 
-        {/* 垂直方向の断線グリッド */}
+        {/* 垂直方向断線 */}
         <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
           {[...Array(10)].map((_, i) => (
             <line
@@ -37,7 +44,7 @@ export function InformationWarEndSlide() {
           ))}
         </svg>
 
-        {/* ノイズ断片（情報の残骸） */}
+        {/* ノイズ断片 */}
         <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
           {[...Array(22)].map((_, i) => (
             <rect
@@ -54,7 +61,7 @@ export function InformationWarEndSlide() {
 
       </div>
 
-      {/* メインテキスト */}
+      {/* ===== メインテキスト ===== */}
       <h1 className="relative z-10 text-white font-black text-[8rem] md:text-[10rem] tracking-tight text-center leading-tight">
         情報量戦略<br />の終わり
       </h1>

@@ -2,7 +2,14 @@ export function ActionAttitudeSlide() {
   return (
     <section className="relative h-screen w-screen bg-black overflow-hidden flex items-center justify-center">
 
-      {/* 背景：行動方向を表すベクトル幾何 */}
+      {/* ===== 背景透かしタイポ ===== */}
+      <div className="absolute top-10 flex items-center justify-center pointer-events-none">
+        <span className="text-yellow-500/10 font-black text-[14rem] md:text-[18rem] tracking-tight select-none">
+          CHOICE
+        </span>
+      </div>
+
+      {/* ===== 背景：行動方向ベクトル ===== */}
       <div className="absolute inset-0 pointer-events-none opacity-15">
 
         {/* 左 → 右（積極的） */}
@@ -35,10 +42,10 @@ export function ActionAttitudeSlide() {
           ))}
         </svg>
 
-        {/* 中央の分断ライン */}
+        {/* 中央分断ライン */}
         <div className="absolute left-1/2 top-0 h-full w-px bg-[#FCCE00]/60" />
 
-        {/* ノイズ的な思考点 */}
+        {/* 思考ノイズ点 */}
         <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
           {[...Array(30)].map((_, i) => (
             <circle
@@ -52,7 +59,7 @@ export function ActionAttitudeSlide() {
         </svg>
       </div>
 
-      {/* メインテキスト */}
+      {/* ===== メインテキスト ===== */}
       <div className="relative z-10 flex items-center gap-12 font-black tracking-tight">
         <span className="text-white text-[7rem] md:text-[9rem]">
           積極的

@@ -3,12 +3,12 @@ export function GarbageInGarbageOutSlide() {
     <section className="relative h-screen w-screen bg-black overflow-hidden flex items-center justify-center">
       
       {/* ===== 背景の巨大英語テキスト ===== */}
-      <div className="absolute inset-0 flex items-center justify-center px-8">
+      <div className="absolute top-0 flex items-center justify-center px-8">
         <h2
           className="
             text-[110px] md:text-[180px] lg:text-[220px]
             font-black tracking-tight
-            text-white/[0.07]
+            text-green-500/10
             select-none
             leading-none
             text-center

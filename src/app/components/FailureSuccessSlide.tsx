@@ -2,7 +2,14 @@ export function FailureSuccessSlide() {
   return (
     <section className="h-screen w-screen bg-black flex items-center justify-center overflow-hidden relative">
       
-      {/* 背景：崩れ → 再構築 → 広がり */}
+      {/* ===== 背景透かしタイポ ===== */}
+      <div className="absolute top-10 flex items-center justify-center pointer-events-none">
+        <span className="text-green-500/10 font-black text-[14rem] md:text-[18rem] tracking-tight select-none">
+          FEEDBACK
+        </span>
+      </div>
+
+      {/* ===== 背景：崩れ → 再構築 → 広がり ===== */}
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -15,19 +22,19 @@ export function FailureSuccessSlide() {
             strokeWidth="1.5"
           />
 
-          {/* 中央：積み上がるブロック構造（再構築） */}
+          {/* 中央：再構築ブロック */}
           <rect x="45%" y="45%" width="120" height="120" fill="none" stroke="#FCCE00" strokeWidth="1.5" />
           <rect x="48%" y="40%" width="100" height="100" fill="none" stroke="#FCCE00" strokeWidth="1.5" />
           <rect x="50%" y="35%" width="80" height="80" fill="none" stroke="#FCCE00" strokeWidth="1.5" />
 
-          {/* 上部：放射ライン（成功への広がり） */}
+          {/* 上部：成功への放射 */}
           <line x1="50%" y1="30%" x2="50%" y2="5%" stroke="#FCCE00" strokeWidth="1.5" />
           <line x1="50%" y1="30%" x2="25%" y2="10%" stroke="#FCCE00" strokeWidth="1.5" />
           <line x1="50%" y1="30%" x2="75%" y2="10%" stroke="#FCCE00" strokeWidth="1.5" />
           <line x1="50%" y1="30%" x2="10%" y2="25%" stroke="#FCCE00" strokeWidth="1.5" />
           <line x1="50%" y1="30%" x2="90%" y2="25%" stroke="#FCCE00" strokeWidth="1.5" />
 
-          {/* 円弧（成長の軌跡） */}
+          {/* 成長の軌跡 */}
           <path
             d="M 200 600 Q 600 400, 1000 600"
             fill="none"
@@ -45,10 +52,11 @@ export function FailureSuccessSlide() {
 
       </div>
 
-      {/* メインテキスト */}
+      {/* ===== メインテキスト ===== */}
       <h1 className="relative z-10 text-white font-black text-[10rem] md:text-[10rem] tracking-tight">
         失敗は成功のもと
       </h1>
+
     </section>
   );
 }
