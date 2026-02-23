@@ -19,7 +19,7 @@ export function RevOpsComparisonSlide() {
     {
       label: '顧客視点',
       oldIcon: AlertTriangle,
-      oldTitle: '接点ごとに体験が分断',
+      oldTitle: '顧客接点が分断',
       newIcon: Users,
       newTitle: '一貫した顧客体験',
     },

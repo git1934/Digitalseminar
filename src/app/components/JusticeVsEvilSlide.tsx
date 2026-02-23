@@ -45,7 +45,7 @@ export function JusticeVsEvilSlide() {
 
       {/* ===== メインテキスト ===== */}
       <div className="relative z-10 flex items-center font-black tracking-tight text-center leading-none">
-        <span className="text-white text-[6.5rem] md:text-[12rem]">
+        <span className="text-blue-400 text-[6.5rem] md:text-[12rem]">
           RevOps
         </span>
       </div>
