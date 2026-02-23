@@ -44,7 +44,7 @@ export function CreatorCurseSlide() {
 
       {/* メインテキスト */}
       <h1 className="relative z-10 text-white font-black text-[10rem] md:text-[10rem] tracking-tight">
-        クリエイターの呪い
+        ツールの派閥
       </h1>
     </section>
   );

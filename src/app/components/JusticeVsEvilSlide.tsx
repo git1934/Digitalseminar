@@ -1,10 +1,8 @@
 export function JusticeVsEvilSlide() {
   return (
     <section className="relative h-screen w-screen bg-black overflow-hidden flex items-center justify-center">
-
       {/* ===== 背景：左右対立構造 ===== */}
       <div className="absolute inset-0 pointer-events-none opacity-20">
-
         {/* 左側：正義（直線・整然） */}
         <svg
           className="absolute left-0 top-0 w-1/2 h-full"
@@ -47,19 +45,9 @@ export function JusticeVsEvilSlide() {
 
       {/* ===== メインテキスト ===== */}
       <div className="relative z-10 flex items-center font-black tracking-tight text-center leading-none">
-
-        <span className="text-white text-[6.5rem] md:text-[8.5rem]">
-          正義
+        <span className="text-white text-[6.5rem] md:text-[12rem]">
+          RevOps
         </span>
-
-        <span className="text-[#FCCE00] text-[4.5rem] md:text-[6rem] mx-10">
-          VS
-        </span>
-
-        <span className="text-white text-[6.5rem] md:text-[8.5rem]">
-          悪
-        </span>
-
       </div>
     </section>
   );

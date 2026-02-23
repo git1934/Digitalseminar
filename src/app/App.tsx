@@ -76,6 +76,7 @@ import { CreatorCurseSlide } from "./components/CreatorCurseSlide";
 import { FailureSuccessSlide } from "./components/FailureSuccessSlide";
 import { ThreePrinciplesSlide } from "./components/ThreePrinciplesSlide";
 import { KeyPointsSlide } from "./components/KeyPointsSlide";
+import { RevOpsComparisonSlide } from "./components/RevOpsComparisonSlide";
 
 export default function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -198,9 +199,15 @@ export default function App() {
     },
     // { component: <ClassificationSlide />, title: 'Classification' },
     { component: <ScaleOutSlide />, title: "Scale Out" },
+
     {
       component: <UserPsychologySlide />,
       title: "User Psychology",
+    },
+    {      component: <JusticeVsEvilSlide />,      title: "Justice VS Evil",    },
+    {
+      component: <RevOpsComparisonSlide />,
+      title: "RevOps Comparison",
     },
     {
       component: <ConclusionPreludeWide2 />,
@@ -276,7 +283,6 @@ export default function App() {
       title: "Balance Sense",
     },
     { component: <CommonEnemySlide />, title: "Common Enemy" },
-    // {      component: <JusticeVsEvilSlide />,      title: "Justice VS Evil",    },
     {
       component: <FailureSuccessSlide />,
       title: "Failure Success",

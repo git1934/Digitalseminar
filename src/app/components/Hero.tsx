@@ -131,7 +131,7 @@ export function Hero() {
               <Calendar className="w-5 h-5" />
               DATE
             </p>
-            <p>2026年2月20日</p>
+            <p>2026年2月25日</p>
           </div>
         </div>
       </div>
