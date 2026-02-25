@@ -53,8 +53,8 @@ export function FailureSuccessSlide() {
       </div>
 
       {/* ===== メインテキスト ===== */}
-      <h1 className="relative z-10 text-white font-black text-[10rem] md:text-[10rem] tracking-tight">
-        失敗は成功のもと
+      <h1 className="relative z-10 text-white font-black text-[6rem] md:text-[6rem] tracking-tight">
+        効率を高めるほど<br/>変化するのはむずかしくなる
       </h1>
 
     </section>

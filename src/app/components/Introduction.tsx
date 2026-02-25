@@ -16,12 +16,12 @@ export function Introduction() {
     {
       icon: Award,
       title: 'プロジェクト実績',
-      description: '企業のDX支援プロジェクト10社以上',
+      description: '企業のDX支援プロジェクト100社以上',
     },
     {
       icon: BookOpen,
       title: '受賞',
-      description: '奈良市オープンデータコンテスト優秀賞など',
+      description: 'オープンデータコンテスト優秀賞など',
     },
   ];
 
